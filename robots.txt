@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /privacidade/
+
+Sitemap: https://gamerextremoelitehackerbr.github.io/site-gamerextremo/sitemap.xml
