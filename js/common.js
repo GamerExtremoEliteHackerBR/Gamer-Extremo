@@ -1,3 +1,32 @@
+// ===== TEMA CLARO/ESCURO =====
+// Aplica o tema IMEDIATAMENTE (chamado no <head> também, se quiser evitar flash)
+function applyTheme(theme) {
+    if (theme === 'light') {
+        document.body.classList.add('light');
+    } else {
+        document.body.classList.remove('light');
+    }
+    try { localStorage.setItem('theme', theme); } catch (e) {}
+    const btn = document.getElementById('theme-toggle');
+    if (btn) btn.textContent = theme === 'light' ? '🌙' : '☀️';
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute('content', theme === 'light' ? '#e94560' : '#1a1a2e');
+}
+
+function toggleTheme() {
+    const isLight = document.body.classList.contains('light');
+    applyTheme(isLight ? 'dark' : 'light');
+}
+
+// Aplica o tema o mais cedo possível (antes do DOMContentLoaded)
+(function () {
+    let saved = 'dark';
+    try { saved = localStorage.getItem('theme') || 'dark'; } catch (e) {}
+    if (saved === 'light' && document.body) {
+        document.body.classList.add('light');
+    }
+})();
+
 // ===== TROCA DE IDIOMA =====
 function setPolicyLang(lang) {
     const pt = document.getElementById('policy-pt');
@@ -28,12 +57,11 @@ function setPolicyLang(lang) {
     history.replaceState(null, '', '#' + lang);
 }
 
-// ===== LIGHTBOX DE SCREENSHOTS =====
+// ===== LIGHTBOX =====
 let lightboxImages = [];
 let lightboxIndex = 0;
 
 function initLightbox() {
-    // Cria o lightbox no body
     const lb = document.createElement('div');
     lb.className = 'lightbox';
     lb.id = 'lightbox';
@@ -48,9 +76,7 @@ function initLightbox() {
     lb.querySelector('.close').addEventListener('click', closeLightbox);
     lb.querySelector('.prev').addEventListener('click', () => navigateLightbox(-1));
     lb.querySelector('.next').addEventListener('click', () => navigateLightbox(1));
-    lb.addEventListener('click', (e) => {
-        if (e.target === lb) closeLightbox();
-    });
+    lb.addEventListener('click', (e) => { if (e.target === lb) closeLightbox(); });
     document.addEventListener('keydown', (e) => {
         if (!lb.classList.contains('active')) return;
         if (e.key === 'Escape') closeLightbox();
@@ -58,10 +84,8 @@ function initLightbox() {
         if (e.key === 'ArrowRight') navigateLightbox(1);
     });
 
-    // Liga todos os screenshots da página
     const shots = document.querySelectorAll('.screenshot img');
     lightboxImages = Array.from(shots).map(img => img.src);
-
     shots.forEach((img, i) => {
         img.parentElement.addEventListener('click', () => openLightbox(i));
     });
@@ -90,9 +114,14 @@ function navigateLightbox(dir) {
     lb.querySelector('img').src = lightboxImages[lightboxIndex];
 }
 
-// ===== INICIALIZAÇÃO =====
+// ===== INICIALIZAÇÃO (DOM já pronto) =====
 document.addEventListener('DOMContentLoaded', function () {
-    // Restaura idioma salvo (se estiver numa página de política)
+    // Reaplica o tema para atualizar o ícone do botão
+    let savedTheme = 'dark';
+    try { savedTheme = localStorage.getItem('theme') || 'dark'; } catch (e) {}
+    applyTheme(savedTheme);
+
+    // Idioma
     const hash = window.location.hash.replace('#', '');
     let saved = hash;
     if (!saved) {
@@ -102,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function () {
         setPolicyLang(saved);
     }
 
-    // Inicializa lightbox (se houver screenshots na página)
+    // Lightbox
     if (document.querySelector('.screenshot')) {
         initLightbox();
     }
