@@ -5,12 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multi Conversor | Gamer Extremo</title>
     <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="apple-touch-icon" href="../favicon.svg">
+    <meta name="theme-color" content="#1a1a2e">
+
+    <!-- SEO -->
+    <meta name="description" content="Multi Conversor: conversão de unidades, bases numéricas e ASCII. Rápido, leve e 100% offline no seu Android.">
+    <meta name="author" content="Gamer Extremo">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Gamer Extremo">
+    <meta property="og:title" content="Multi Conversor | Gamer Extremo">
+    <meta property="og:description" content="Converta unidades, bases numéricas e ASCII com processamento local. Sem coleta de dados.">
+    <meta property="og:url" content="https://gamerextremoelitehackerbr.github.io/site-gamerextremo/apps/multi-conversor.html">
+    <meta property="og:image" content="https://gamerextremoelitehackerbr.github.io/site-gamerextremo/favicon.svg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Multi Conversor | Gamer Extremo">
+    <meta name="twitter:description" content="Converta unidades, bases numéricas e ASCII com processamento local. Sem coleta de dados.">
+    <meta name="twitter:image" content="https://gamerextremoelitehackerbr.github.io/site-gamerextremo/favicon.svg">
+
+    <!-- Anti-flash de tema -->
+    <script>
+        (function () {
+            try {
+                if (localStorage.getItem('theme') === 'light')
+                    document.documentElement.classList.add('preload-light');
+            } catch (e) {}
+        })();
+    </script>
+    <style>
+        html.preload-light body { background: #f4f4f8; color: #1a1a2e; }
+    </style>
 </head>
 <body>
 
     <header>
         <a href="../index.html"><h1>Gamer <span>Extremo</span></h1></a>
         <p>GAMES • APPS • ANIMES</p>
+        <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Alternar tema">☀️</button>
     </header>
 
     <nav>
@@ -42,23 +75,13 @@
 
             <!-- ===== BOTÃO PLAY STORE ===== -->
             <div class="btn-group" style="margin: 20px 0;">
-                
                 <a href="https://play.google.com/store/apps/details?id=br.com.elitehacker.exemplosoma" class="store-btn" target="_blank" rel="noopener">
-    <span class="store-icon">▶</span>
-    <span class="store-text">
-        <small>Disponível no</small>
-        <strong>Google Play</strong>
-    </span>
-</a>
-                
-                <!-- <a href="#" class="store-btn disabled" onclick="return false;" aria-disabled="true">
                     <span class="store-icon">▶</span>
                     <span class="store-text">
-                        <small>Em breve na</small>
+                        <small>Disponível no</small>
                         <strong>Google Play</strong>
                     </span>
-                </a> -->
-                
+                </a>
             </div>
 
             <h3>✨ Funcionalidades</h3>
@@ -145,6 +168,11 @@
         <p>&copy; 2026 Gamer Extremo. Todos os direitos reservados.</p>
     </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.documentElement.classList.remove('preload-light');
+        });
+    </script>
     <script src="../js/common.js"></script>
 </body>
 </html>
