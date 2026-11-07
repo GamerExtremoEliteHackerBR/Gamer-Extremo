@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca CEP | Gamer Extremo</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="apple-touch-icon" href="../favicon.svg">
+    <meta name="theme-color" content="#1a1a2e">
+
+    <!-- SEO -->
+    <meta name="description" content="Busca CEP: consulte CEPs, ruas e use o GPS para encontrar endereços e localização no Brasil. Rápido, moderno e gratuito.">
+    <meta name="author" content="Gamer Extremo">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Gamer Extremo">
+    <meta property="og:title" content="Busca CEP | Gamer Extremo">
+    <meta property="og:description" content="Consulte CEPs, ruas e use o GPS para encontrar endereços e localização. A ferramenta definitiva para endereços no Brasil.">
+    <meta property="og:url" content="https://gamerextremoelitehackerbr.github.io/site-gamerextremo/apps/busca-cep.html">
+    <meta property="og:image" content="https://gamerextremoelitehackerbr.github.io/site-gamerextremo/favicon.svg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Busca CEP | Gamer Extremo">
+    <meta name="twitter:description" content="Consulte CEPs, ruas e use o GPS para encontrar endereços e localização. A ferramenta definitiva para endereços no Brasil.">
+    <meta name="twitter:image" content="https://gamerextremoelitehackerbr.github.io/site-gamerextremo/favicon.svg">
+
+    <!-- Anti-flash de tema -->
+    <script>
+        (function () {
+            try {
+                if (localStorage.getItem('theme') === 'light')
+                    document.documentElement.classList.add('preload-light');
+            } catch (e) { }
+        })();
+    </script>
+    <style>
+        html.preload-light body {
+            background: #f4f4f8;
+            color: #1a1a2e;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="../index.html"><h1>Gamer <span>Extremo</span></h1></a>
+        <p>GAMES • APPS • ANIMES</p>
+        <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Alternar tema">☀️</button>
+    </header>
+
+    <nav>
+        <a href="../index.html">🏠 Início</a>
+        <a href="../index.html#apps" class="active">📱 Nossos Apps</a>
+        <a href="../sobre.html">🏢 Sobre</a>
+    </nav>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../index.html">Início</a>
+            <span>›</span>
+            <a href="../index.html#apps">Nossos Apps</a>
+            <span>›</span>
+            Busca CEP
+        </div>
+
+        <section class="card-block">
+            <h2>📍 Busca CEP</h2>
+
+            <div class="app-meta">
+                <span><strong>Pacote:</strong> com.gamerextremo.buscacep</span>
+                <span><strong>Plataforma:</strong> Android</span>
+                <span><strong>Categoria:</strong> Ferramentas</span>
+                <span><strong>Versão:</strong> 1.01</span>
+            </div>
+
+            <p>O <strong>Busca CEP</strong> é a ferramenta definitiva e mais rápida para encontrar qualquer endereço no Brasil. Consulte CEPs, ruas e use o <strong>GPS</strong> para encontrar endereços e localização. Seja para preencher um cadastro, fazer uma entrega ou descobrir onde fica um local, este app resolve em segundos.</p>
+
+            <p>Com interface moderna, suporte a <strong>temas Claro e Escuro</strong> e fácil de usar, você tem tudo na palma da mão!</p>
+
+            <!-- ===== BOTÃO PLAY STORE ===== -->
+            <div class="btn-group" style="margin: 20px 0;">
+                <a href="https://play.google.com/store/apps/details?id=com.gamerextremo.buscacep" class="store-btn" target="_blank" rel="noopener">
+                    <span class="store-icon">▶</span>
+                    <span class="store-text">
+                        <small>Disponível no</small>
+                        <strong>Google Play</strong>
+                    </span>
+                </a>
+            </div>
+
+            <h3>✨ Funcionalidades</h3>
+            <ul>
+                <li>Consulta de CEP por endereço ou rua</li>
+                <li>Busca de endereço completo a partir do CEP</li>
+                <li><strong>GPS integrado</strong> — encontre sua localização atual e CEP próximo</li>
+                <li>Interface moderna e intuitiva</li>
+                <li>Suporte a temas Claro e Escuro</li>
+                <li>Gratuito, com anúncios discretos</li>
+            </ul>
+
+            <!-- ===== SCREENSHOTS ===== -->
+            <h3>📸 Screenshots</h3>
+            <div class="screenshots">
+                <div class="screenshot">
+                    <img src="../img/screenshots/busca-cep/01.png" alt="Tela de busca de CEP" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='block';">
+                    <div class="placeholder" style="display:none;">01.png<br>(coloque a imagem)</div>
+                </div>
+                <div class="screenshot">
+                    <img src="../img/screenshots/busca-cep/02.png" alt="Resultado do endereço" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='block';">
+                    <div class="placeholder" style="display:none;">02.png<br>(coloque a imagem)</div>
+                </div>
+                <div class="screenshot">
+                    <img src="../img/screenshots/busca-cep/03.png" alt="Localização via GPS" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='block';">
+                    <div class="placeholder" style="display:none;">03.png<br>(coloque a imagem)</div>
+                </div>
+            </div>
+
+            <!-- ===== FAQ ===== -->
+            <h3>❓ Perguntas Frequentes</h3>
+
+            <details class="faq-item">
+                <summary>O app é gratuito?</summary>
+                <div class="faq-answer">Sim, o Busca CEP é totalmente gratuito, com anúncios discretos que ajudam a manter o desenvolvimento.</div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Preciso de internet para usar?</summary>
+                <div class="faq-answer">Sim, para consultar CEPs e endereços. A busca usa a API pública ViaCEP, que requer conexão. O GPS também pode precisar de internet para maior precisão, mas o sinal de satélite funciona offline.</div>
+            </details>
+
+            <details class="faq-item">
+                <summary>O app acessa minha localização GPS?</summary>
+                <div class="faq-answer">Sim, mas apenas quando você solicita a função de localização. O app pede permissão antes de acessar o GPS. Sua localização é usada para encontrar endereços e CEPs próximos, e não é armazenada em servidores nossos.</div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Meus CEPs consultados ficam salvos?</summary>
+                <div class="faq-answer">O histórico de consultas (se implementado) fica armazenado apenas no seu dispositivo. Você pode limpá-lo nas configurações do app ou desinstalando o aplicativo.</div>
+            </details>
+
+            <details class="faq-item">
+                <summary>O que é a API ViaCEP?</summary>
+                <div class="faq-answer">É um serviço público brasileiro que retorna dados de endereço a partir de um CEP. Quando você digita um CEP, o app envia essa consulta para a ViaCEP. Nenhum dado pessoal seu é enviado além do CEP consultado.</div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Como reporto um erro ou sugiro uma melhoria?</summary>
+                <div class="faq-answer">Envie um e-mail para <a href="mailto:gamerextremobr5@gmail.com">gamerextremobr5@gmail.com</a> ou abra uma issue no <a href="https://github.com/GamerExtremoEliteHackerBR" target="_blank">GitHub</a>.</div>
+            </details>
+
+            <!-- ===== CHANGELOG ===== -->
+            <h3>📜 Histórico de Versões</h3>
+
+            <div class="changelog-item">
+                <h4>Versão 1.01</h4>
+                <div class="version-date">05 de Novembro de 2026 — Lançamento inicial</div>
+                <ul>
+                    <li>Consulta de CEP por endereço e por rua</li>
+                    <li>Busca de endereço completo a partir do CEP</li>
+                    <li>Integração com GPS para localização atual</li>
+                    <li>Suporte a temas Claro e Escuro</li>
+                    <li>Interface moderna e responsiva</li>
+                </ul>
+            </div>
+
+            <!-- ===== LINKS ===== -->
+            <h3>🔒 Privacidade</h3>
+            <p>O Busca CEP usa GPS apenas quando solicitado, não armazena sua localização em servidores e não coleta dados pessoais. As consultas de CEP são enviadas à API pública ViaCEP. Saiba mais na política abaixo.</p>
+
+            <div class="btn-group">
+                <a href="../privacidade/busca-cep.html" class="btn">📄 Política de Privacidade</a>
+                <a href="../index.html#apps" class="btn btn-outline">← Voltar aos apps</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gamer Extremo. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.documentElement.classList.remove('preload-light');
+        });
+    </script>
+    <script src="../js/common.js"></script>
+</body>
+</html>
