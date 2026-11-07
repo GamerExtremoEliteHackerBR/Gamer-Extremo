@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade — Busca CEP | Gamer Extremo</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="apple-touch-icon" href="../favicon.svg">
+    <meta name="theme-color" content="#1a1a2e">
+
+    <!-- SEO -->
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Política de Privacidade do app Busca CEP — Gamer Extremo.">
+
+    <!-- Anti-flash de tema -->
+    <script>
+        (function () {
+            try {
+                if (localStorage.getItem('theme') === 'light')
+                    document.documentElement.classList.add('preload-light');
+            } catch (e) { }
+        })();
+    </script>
+    <style>
+        html.preload-light body {
+            background: #f4f4f8;
+            color: #1a1a2e;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="../index.html"><h1>Gamer <span>Extremo</span></h1></a>
+        <p>GAMES • APPS • ANIMES</p>
+        <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Alternar tema">☀️</button>
+    </header>
+
+    <nav>
+        <a href="../index.html">🏠 Início</a>
+        <a href="../index.html#apps" class="active">📱 Nossos Apps</a>
+        <a href="../sobre.html">🏢 Sobre</a>
+    </nav>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../index.html">Início</a>
+            <span>›</span>
+            <a href="../apps/busca-cep.html">Busca CEP</a>
+            <span>›</span>
+            Política de Privacidade
+        </div>
+
+        <section class="card-block">
+
+            <div class="lang-switcher">
+                <div class="current">
+                    🌐 Idioma / Language: <strong id="current-lang-label">Português (BR)</strong>
+                </div>
+                <div class="lang-toggle" role="group" aria-label="Language selector">
+                    <button type="button" id="btn-pt" class="active" onclick="setPolicyLang('pt')">🇧🇷 PT-BR</button>
+                    <button type="button" id="btn-en" onclick="setPolicyLang('en')">🇺🇸 EN-US</button>
+                </div>
+            </div>
+
+            <!-- ================= PT-BR ================= -->
+            <div class="policy-content active" id="policy-pt">
+                <h2>Política de Privacidade — Busca CEP</h2>
+                <p class="updated">Última atualização: 05 de Novembro de 2026</p>
+
+                <div class="highlight-box">
+                    <p>
+                        <strong>Desenvolvedora:</strong> Gamer Extremo<br>
+                        <strong>Aplicativo:</strong> Busca CEP<br>
+                        <strong>Pacote Android:</strong> <code>com.gamerextremo.buscacep</code><br>
+                        <strong>Contato:</strong> <a href="mailto:gamerextremobr5@gmail.com">gamerextremobr5@gmail.com</a>
+                    </p>
+                </div>
+
+                <h3>1. Introdução</h3>
+                <p>Esta Política de Privacidade descreve como a <strong>Gamer Extremo</strong> ("nós", "nosso") trata as informações dos usuários do aplicativo <strong>Busca CEP</strong>. Ao instalar e usar o app, você concorda com as práticas descritas aqui.</p>
+                <p>O Busca CEP é uma ferramenta para consulta de CEPs e endereços no Brasil, com suporte a GPS para localização. O app utiliza a <strong>API pública ViaCEP</strong> para consultas de endereço e o <strong>Google AdMob</strong> para exibição de anúncios.</p>
+
+                <h3>2. Dados Coletados</h3>
+                <p>O aplicativo pode coletar as seguintes informações:</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dado</th>
+                            <th>Finalidade</th>
+                            <th>Armazenamento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Localização (GPS)</strong> — aproximada ou precisa</td>
+                            <td>Encontrar endereços e CEPs próximos à sua localização atual (somente quando você solicita)</td>
+                            <td>Processada em tempo real no dispositivo. <strong>Não é armazenada em servidores nossos.</strong> O histórico de locais consultados (se implementado) fica apenas no dispositivo.</td>
+                        </tr>
+                        <tr>
+                            <td>CEP consultado e endereço retornado</td>
+                            <td>Realizar a consulta de CEP via API ViaCEP e exibir o resultado</td>
+                            <td>O CEP é enviado à ViaCEP. O histórico de consultas (se implementado) fica apenas no dispositivo.</td>
+                        </tr>
+                        <tr>
+                            <td>Preferências do app (tema, etc.)</td>
+                            <td>Personalizar a experiência do usuário</td>
+                            <td>Armazenamento local no dispositivo</td>
+                        </tr>
+                        <tr>
+                            <td>Identificador de publicidade (Advertising ID)</td>
+                            <td>Exibição de anúncios via Google AdMob</td>
+                            <td>Coletado pelo Google AdMob, conforme política do Google [citation:3]</td>
+                        </tr>
+                        <tr>
+                            <td>Dados de uso anônimos e falhas (se Firebase implementado)</td>
+                            <td>Melhoria contínua do app e correção de erros</td>
+                            <td>Firebase Analytics / Crashlytics (Google)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p><strong>Não coletamos:</strong> nome, e-mail, telefone do usuário, contatos, fotos, microfone, câmera ou quaisquer dados sensíveis.</p>
+
+                <div class="warning-box">
+                    <p><strong>⚠️ Importante sobre a localização:</strong> O GPS é acessado <strong>apenas quando você solicita</strong> a função de localização. Sua localização é usada para encontrar endereços e CEPs próximos. <strong>Não armazenamos sua localização em servidores próprios</strong> e não a compartilhamos com terceiros para fins de marketing.</p>
+                </div>
+
+                <h3>3. Uso da API ViaCEP</h3>
+                <p>O app utiliza a <strong>API pública ViaCEP</strong> (viacep.com.br) para consultar endereços a partir de um CEP. Quando você digita um CEP:</p>
+                <ul>
+                    <li>O CEP consultado é enviado aos servidores da ViaCEP.</li>
+                    <li>A ViaCEP pode registrar o endereço IP da requisição e dados técnicos da conexão, conforme sua própria política de uso.</li>
+                    <li>Nenhum dado pessoal seu (nome, e-mail, telefone) é enviado junto com a consulta.</li>
+                    <li>O app não armazena suas consultas em servidores próprios.</li>
+                </ul>
+
+                <h3>4. Uso do GPS e Localização</h3>
+                <p>O Busca CEP pode solicitar permissão de localização (aproximada ou precisa) para:</p>
+                <ul>
+                    <li>Identificar sua posição atual e sugerir CEPs e endereços próximos.</li>
+                    <li>Facilitar a busca por locais ao seu redor.</li>
+                </ul>
+                <p>O acesso ao GPS:</p>
+                <ul>
+                    <li>Ocorre <strong>somente quando você aciona a função de localização</strong> no app.</li>
+                    <li>É opcional — você pode negar a permissão e usar o app apenas com consulta manual de CEP.</li>
+                    <li><strong>Não é armazenado</strong> em servidores nossos.</li>
+                    <li><strong>Não é compartilhado</strong> com redes de anúncios ou ferramentas de analytics.</li>
+                </ul>
+
+                <h3>5. Compartilhamento com Terceiros</h3>
+                <p>Não vendemos, alugamos ou compartilhamos seus dados pessoais com terceiros para fins de marketing. Os terceiros que podem processar dados são:</p>
+                <ul>
+                    <li><strong>ViaCEP</strong> — recebe apenas o CEP consultado e dados técnicos da requisição (IP, headers). Consulte a política da ViaCEP em <a href="https://viacep.com.br" target="_blank">viacep.com.br</a>.</li>
+                    <li><strong>Google LLC</strong> — por meio do AdMob (anúncios) e Firebase (analytics/crash logs, se implementado). O Google pode coletar Advertising ID, IP, dados de interação com anúncios e informações técnicas do dispositivo, conforme a <a href="https://policies.google.com/privacy" target="_blank">política do Google</a> [citation:3].</li>
+                    <li><strong>Autoridades legais</strong> — quando exigido por lei ou ordem judicial.</li>
+                </ul>
+
+                <h3>6. Armazenamento e Retenção</h3>
+                <ul>
+                    <li><strong>Dados locais</strong> (histórico de consultas, preferências): permanecem no dispositivo enquanto o app estiver instalado. São removidos ao desinstalar o app ou limpar os dados.</li>
+                    <li><strong>Localização GPS:</strong> não é armazenada em servidores. O histórico de locais consultados (se implementado) fica apenas no dispositivo.</li>
+                    <li><strong>Dados de analytics e crash logs</strong> (se Firebase): retidos por até <strong>14 meses</strong>.</li>
+                    <li><strong>Dados de publicidade</strong> (AdMob): gerenciados pelo Google conforme sua política.</li>
+                </ul>
+
+                <h3>7. Segurança</h3>
+                <p>Adotamos medidas técnicas razoáveis para proteger as informações armazenadas localmente no dispositivo. No entanto, nenhum sistema é 100% seguro.</p>
+
+                <h3>8. Direitos do Usuário (LGPD / GDPR / CCPA)</h3>
+                <p>Em conformidade com a <strong>LGPD (Lei nº 13.709/2018)</strong>, o <strong>GDPR</strong> e o <strong>CCPA</strong>, você tem direito a:</p>
+                <ul>
+                    <li>Confirmar a existência de tratamento de dados;</li>
+                    <li>Acessar, corrigir ou solicitar a exclusão dos seus dados;</li>
+                    <li>Revogar o consentimento a qualquer momento;</li>
+                    <li>Solicitar a portabilidade dos dados (GDPR);</li>
+                    <li>Optar por não vender/compartilhar dados (CCPA);</li>
+                    <li>Apresentar reclamação a uma autoridade de proteção de dados.</li>
+                </ul>
+                <p>Como a maior parte dos dados fica armazenada apenas no dispositivo, a exclusão pode ser feita diretamente <strong>desinstalando o app</strong> ou limpando os dados nas configurações do Android. Para dados tratados por terceiros (Google, ViaCEP), solicite diretamente a esses provedores.</p>
+
+                <h3>9. Crianças</h3>
+                <p>O app é destinado a maiores de 13 anos. Não coletamos intencionalmente dados de crianças menores de 13 anos.</p>
+
+                <h3>10. Alterações nesta Política</h3>
+                <p>Podemos atualizar esta Política periodicamente. A data de "Última atualização" no topo será revisada. O uso contínuo do app após alterações constitui aceitação da nova versão.</p>
+
+                <h3>11. Contato</h3>
+                <p>Para dúvidas, solicitações ou reclamações sobre privacidade:</p>
+                <p>
+                    <strong>E-mail:</strong> <a href="mailto:gamerextremobr5@gmail.com">gamerextremobr5@gmail.com</a><br>
+                    <strong>GitHub:</strong> <a href="https://github.com/GamerExtremoEliteHackerBR" target="_blank">github.com/GamerExtremoEliteHackerBR</a>
+                </p>
+
+                <div class="btn-group">
+                    <a href="../apps/busca-cep.html" class="btn btn-outline">← Voltar ao app</a>
+                </div>
+            </div>
+
+            <!-- ================= EN-US ================= -->
+            <div class="policy-content" id="policy-en">
+                <h2>Privacy Policy — Busca CEP</h2>
+                <p class="updated">Last updated: November 5, 2026</p>
+
+                <div class="highlight-box">
+                    <p>
+                        <strong>Developer:</strong> Gamer Extremo<br>
+                        <strong>Application:</strong> Busca CEP<br>
+                        <strong>Android Package:</strong> <code>com.gamerextremo.buscacep</code><br>
+                        <strong>Contact:</strong> <a href="mailto:gamerextremobr5@gmail.com">gamerextremobr5@gmail.com</a>
+                    </p>
+                </div>
+
+                <h3>1. Introduction</h3>
+                <p>This Privacy Policy describes how <strong>Gamer Extremo</strong> ("we", "our") handles user information for the <strong>Busca CEP</strong> application. By installing and using the app, you agree to the practices described here.</p>
+                <p>Busca CEP is a tool for looking up Brazilian postal codes (CEPs) and addresses, with GPS support for location. The app uses the <strong>public ViaCEP API</strong> for address lookups and <strong>Google AdMob</strong> for advertising.</p>
+
+                <h3>2. Data Collected</h3>
+                <p>The app may collect the following information:</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Purpose</th>
+                            <th>Storage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Location (GPS)</strong> — approximate or precise</td>
+                            <td>Find addresses and CEPs near your current location (only when you request it)</td>
+                            <td>Processed in real-time on the device. <strong>Not stored on our servers.</strong> History of looked-up places (if implemented) stays only on the device.</td>
+                        </tr>
+                        <tr>
+                            <td>Queried CEP and returned address</td>
+                            <td>Perform the CEP lookup via ViaCEP API and display the result</td>
+                            <td>The CEP is sent to ViaCEP. Lookup history (if implemented) stays only on the device.</td>
+                        </tr>
+                        <tr>
+                            <td>App preferences (theme, etc.)</td>
+                            <td>Personalize the user experience</td>
+                            <td>Local storage on the device</td>
+                        </tr>
+                        <tr>
+                            <td>Advertising ID</td>
+                            <td>Ad display via Google AdMob</td>
+                            <td>Collected by Google AdMob, under Google's policy [citation:3]</td>
+                        </tr>
+                        <tr>
+                            <td>Anonymous usage and crash data (if Firebase implemented)</td>
+                            <td>Continuous improvement and bug fixing</td>
+                            <td>Firebase Analytics / Crashlytics (Google)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p><strong>We do not collect:</strong> your name, email, phone number, contacts, photos, microphone, camera, or any sensitive data.</p>
+
+                <div class="warning-box">
+                    <p><strong>⚠️ Important about location:</strong> GPS is accessed <strong>only when you request</strong> the location feature. Your location is used to find nearby addresses and CEPs. <strong>We do not store your location on our own servers</strong> and do not share it with third parties for marketing purposes.</p>
+                </div>
+
+                <h3>3. ViaCEP API Usage</h3>
+                <p>The app uses the <strong>public ViaCEP API</strong> (viacep.com.br) to look up addresses from a CEP. When you enter a CEP:</p>
+                <ul>
+                    <li>The queried CEP is sent to ViaCEP servers.</li>
+                    <li>ViaCEP may log the request's IP address and technical connection data, under its own usage policy.</li>
+                    <li>No personal data (name, email, phone) is sent with the query.</li>
+                    <li>The app does not store your queries on its own servers.</li>
+                </ul>
+
+                <h3>4. GPS and Location Usage</h3>
+                <p>Busca CEP may request location permission (approximate or precise) to:</p>
+                <ul>
+                    <li>Identify your current position and suggest nearby CEPs and addresses.</li>
+                    <li>Facilitate searching for places around you.</li>
+                </ul>
+                <p>GPS access:</p>
+                <ul>
+                    <li>Occurs <strong>only when you trigger the location feature</strong> in the app.</li>
+                    <li>Is optional — you can deny permission and use the app only with manual CEP lookup.</li>
+                    <li><strong>Is not stored</strong> on our servers.</li>
+                    <li><strong>Is not shared</strong> with ad networks or analytics tools.</li>
+                </ul>
+
+                <h3>5. Sharing with Third Parties</h3>
+                <p>We do not sell, rent, or share your personal data with third parties for marketing purposes. Third parties that may process data are:</p>
+                <ul>
+                    <li><strong>ViaCEP</strong> — receives only the queried CEP and technical request data (IP, headers). See ViaCEP's policy at <a href="https://viacep.com.br" target="_blank">viacep.com.br</a>.</li>
+                    <li><strong>Google LLC</strong> — through AdMob (ads) and Firebase (analytics/crash logs, if implemented). Google may collect Advertising ID, IP, ad interaction data, and device technical information, under <a href="https://policies.google.com/privacy" target="_blank">Google's policy</a> [citation:3].</li>
+                    <li><strong>Legal authorities</strong> — when required by law or court order.</li>
+                </ul>
+
+                <h3>6. Storage and Retention</h3>
+                <ul>
+                    <li><strong>Local data</strong> (lookup history, preferences): remains on the device while the app is installed. Removed upon uninstalling the app or clearing its data.</li>
+                    <li><strong>GPS location:</strong> not stored on servers. History of looked-up places (if implemented) stays only on the device.</li>
+                    <li><strong>Analytics and crash logs</strong> (if Firebase): retained for up to <strong>14 months</strong>.</li>
+                    <li><strong>Advertising data</strong> (AdMob): managed by Google under its policy.</li>
+                </ul>
+
+                <h3>7. Security</h3>
+                <p>We adopt reasonable technical measures to protect information stored locally on the device. However, no system is 100% secure.</p>
+
+                <h3>8. User Rights (LGPD / GDPR / CCPA)</h3>
+                <p>In compliance with the <strong>LGPD (Law No. 13,709/2018)</strong>, the <strong>GDPR</strong>, and the <strong>CCPA</strong>, you have the right to:</p>
+                <ul>
+                    <li>Confirm the existence of data processing;</li>
+                    <li>Access, correct, or request deletion of your data;</li>
+                    <li>Revoke consent at any time;</li>
+                    <li>Request data portability (GDPR);</li>
+                    <li>Opt out of the sale/sharing of data (CCPA);</li>
+                    <li>Lodge a complaint with a data protection authority.</li>
+                </ul>
+                <p>Since most data is stored only on the device, deletion can be done directly by <strong>uninstalling the app</strong> or clearing its data in Android settings. For data processed by third parties (Google, ViaCEP), please contact those providers directly.</p>
+
+                <h3>9. Children</h3>
+                <p>The app is intended for users aged 13 and older. We do not knowingly collect data from children under 13.</p>
+
+                <h3>10. Changes to This Policy</h3>
+                <p>We may update this Policy periodically. The "Last updated" date at the top will be revised. Continued use of the app after changes constitutes acceptance of the new version.</p>
+
+                <h3>11. Contact</h3>
+                <p>For questions, requests, or complaints about privacy:</p>
+                <p>
+                    <strong>Email:</strong> <a href="mailto:gamerextremobr5@gmail.com">gamerextremobr5@gmail.com</a><br>
+                    <strong>GitHub:</strong> <a href="https://github.com/GamerExtremoEliteHackerBR" target="_blank">github.com/GamerExtremoEliteHackerBR</a>
+                </p>
+
+                <div class="btn-group">
+                    <a href="../apps/busca-cep.html" class="btn btn-outline">← Back to app</a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gamer Extremo. Todos os direitos reservados / All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.documentElement.classList.remove('preload-light');
+        });
+    </script>
+    <script src="../js/common.js"></script>
+</body>
+</html>

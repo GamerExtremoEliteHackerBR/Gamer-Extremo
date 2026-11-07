@@ -5,24 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Política de Privacidade — Segurança Privada ES | Gamer Extremo</title>
     <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="apple-touch-icon" href="../favicon.svg">
+    <meta name="theme-color" content="#1a1a2e">
+
+    <!-- SEO -->
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Política de Privacidade do app Segurança Privada ES — Gamer Extremo.">
+
+    <!-- Anti-flash de tema -->
+    <script>
+        (function () {
+            try {
+                if (localStorage.getItem('theme') === 'light')
+                    document.documentElement.classList.add('preload-light');
+            } catch (e) {}
+        })();
+    </script>
+    <style>
+        html.preload-light body { background: #f4f4f8; color: #1a1a2e; }
+    </style>
 </head>
 <body>
 
     <header>
         <a href="../index.html"><h1>Gamer <span>Extremo</span></h1></a>
         <p>GAMES • APPS • ANIMES</p>
+        <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Alternar tema">☀️</button>
     </header>
 
     <nav>
         <a href="../index.html">🏠 Início</a>
         <a href="../index.html#apps" class="active">📱 Nossos Apps</a>
+        <a href="../sobre.html">🏢 Sobre</a>
     </nav>
 
     <main>
         <div class="breadcrumb">
             <a href="../index.html">Início</a>
             <span>›</span>
-            <a href="seguranca-privada-es.html">Segurança Privada ES</a>
+            <a href="../apps/seguranca-privada-es.html">Segurança Privada ES</a>
             <span>›</span>
             Política de Privacidade
         </div>
@@ -266,6 +290,11 @@
         <p>&copy; 2026 Gamer Extremo. Todos os direitos reservados / All rights reserved.</p>
     </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.documentElement.classList.remove('preload-light');
+        });
+    </script>
     <script src="../js/common.js"></script>
 </body>
 </html>
