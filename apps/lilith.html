@@ -1,0 +1,424 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lilith (Em Breve) | Gamer Extremo</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="apple-touch-icon" href="../favicon.svg">
+    <meta name="theme-color" content="#1a1a2e">
+
+    <!-- SEO -->
+    <meta name="description" content="Lilith: player de música offline, leve e rápido. Em breve no Google Play. Toque suas músicas locais com interface moderna e temas claro/escuro.">
+    <meta name="author" content="Gamer Extremo">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Gamer Extremo">
+    <meta property="og:title" content="Lilith (Em Breve) | Gamer Extremo">
+    <meta property="og:description" content="Seu futuro player de música offline. Em breve no Google Play.">
+    <meta property="og:url" content="https://gamerextremoelitehackerbr.github.io/site-gamerextremo/apps/lilith.html">
+    <meta property="og:image" content="https://gamerextremoelitehackerbr.github.io/site-gamerextremo/favicon.svg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Lilith (Em Breve) | Gamer Extremo">
+    <meta name="twitter:description" content="Seu futuro player de música offline. Em breve no Google Play.">
+    <meta name="twitter:image" content="https://gamerextremoelitehackerbr.github.io/site-gamerextremo/favicon.svg">
+
+    <!-- Anti-flash de tema -->
+    <script>
+        (function () {
+            try {
+                if (localStorage.getItem('theme') === 'light')
+                    document.documentElement.classList.add('preload-light');
+            } catch (e) { }
+        })();
+    </script>
+    <style>
+        html.preload-light body {
+            background: #f4f4f8;
+            color: #1a1a2e;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="../index.html"><h1>Gamer <span>Extremo</span></h1></a>
+        <p>GAMES • APPS • ANIMES</p>
+        <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Alternar tema">☀️</button>
+    </header>
+
+    <nav>
+        <a href="../index.html">🏠 Início</a>
+        <!--<a href="../index.html#apps" class="active">📱 Nossos Apps</a>-->
+        <a href="../index.html#portfolio" class="active">📦 Portfólio</a>
+        <a href="../sobre.html">🏢 Sobre</a>
+    </nav>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../index.html">Início</a>
+            <span>›</span>
+            <!--<a href="../index.html#apps">Nossos Apps</a>-->
+            <a href="../index.html#portfolio">Portfólio</a>
+            <span>›</span>
+            Lilith
+        </div>
+
+        <section class="card-block">
+            <h2>🎵 Lilith <span class="badge-soon">EM BREVE</span></h2>
+
+            <div class="app-meta">
+                <span><strong>Pacote:</strong> com.gamerextremo.lilith</span>
+                <span><strong>Plataforma:</strong> Android</span>
+                <span><strong>Categoria:</strong> Música e Áudio</span>
+                <span><strong>Versão prevista:</strong> 1.0.1</span>
+            </div>
+
+            <!-- ===== AVISO DE DESENVOLVIMENTO ===== -->
+            <div class="warning-box" style="margin: 15px 0;">
+                <p><strong>🚧 Em desenvolvimento:</strong> O Lilith ainda está em fase de desenvolvimento e <strong>não foi publicado</strong> no Google Play. Em breve estará disponível para download. Fique de olho!</p>
+            </div>
+
+            <p>O <strong>Lilith</strong> é um player de música <strong>offline</strong> feito para quem quer simplicidade, velocidade e estilo na hora de ouvir suas faixas favoritas. Sem depender de internet, sem cadastro, sem complicação — só você e a sua playlist.</p>
+
+            <p>Com uma interface moderna, suporte a <strong>temas Claro e Escuro</strong> e reprodução fluida, o Lilith transforma sua biblioteca local em uma experiência de audição premium. Ideal para quem tem músicas no celular e quer um player leve, bonito e funcional.</p>
+
+            <!-- ===== BOTÃO PLAY STORE (DESATIVADO) ===== -->
+            <div class="btn-group" style="margin: 20px 0;">
+                <span class="store-btn disabled" aria-disabled="true">
+                    <span class="store-icon">▶</span>
+                    <span class="store-text">
+                        <small>Em breve na</small>
+                        <strong>Google Play</strong>
+                    </span>
+                </span>
+            </div>
+
+            <h3>✨ Funcionalidades Previstas</h3>
+            <ul>
+                <li><strong>Reprodução 100% offline</strong> — toque suas músicas sem precisar de internet</li>
+                <li>Leitura automática da biblioteca local do dispositivo</li>
+                <li>Interface moderna e intuitiva</li>
+                <li>Suporte a temas <strong>Claro e Escuro</strong></li>
+                <li>Controles de reprodução completos (play, pause, próxima, anterior, shuffle)</li>
+                <li>Player em segundo plano com notificação</li>
+                <li>Rápido, leve e sem anúncios invasivos</li>
+                <li>Sem cadastro, sem login, sem coleta de dados pessoais</li>
+            </ul>
+
+            <h3>🎧 Para quem é o Lilith?</h3>
+            <ul>
+                <li>Quem guarda músicas no celular e quer um player bonito e funcional</li>
+                <li>Quem está cansado de apps pesados que exigem conta e internet</li>
+                <li>Quem valoriza <strong>privacidade</strong> e quer um app que não rastreia</li>
+                <li>Quem gosta de um design moderno com tema claro/escuro</li>
+            </ul>
+
+            <!-- ===== SCREENSHOTS ===== -->
+            <h3>📸 Screenshots (Prévia)</h3>
+            <p style="font-size: 0.9em; color: var(--text-muted); margin-bottom: 10px;">Imagens ilustrativas do desenvolvimento. Podem mudar até o lançamento.</p>
+            <div class="screenshots">
+                <div class="screenshot">
+                    <img src="../img/screenshots/lilith/01.png" alt="Tela inicial do Lilith (prévia)" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='block';">
+                    <div class="placeholder" style="display:none;">01.png<br>(coloque a imagem)</div>
+                </div>
+                <div class="screenshot">
+                    <img src="../img/screenshots/lilith/02.png" alt="Player em reprodução (prévia)" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='block';">
+                    <div class="placeholder" style="display:none;">02.png<br>(coloque a imagem)</div>
+                </div>
+                <div class="screenshot">
+                    <img src="../img/screenshots/lilith/03.png" alt="Lista de músicas (prévia)" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='block';">
+                    <div class="placeholder" style="display:none;">03.png<br>(coloque a imagem)</div>
+                </div>
+            </div>
+
+            <!-- ===== FAQ ===== -->
+            <h3>❓ Perguntas Frequentes</h3>
+
+            <details class="faq-item">
+                <summary>Quando o Lilith será lançado?</summary>
+                <div class="faq-answer">Ainda não temos uma data exata, mas o app está em desenvolvimento ativo. Assim que estiver pronto, será publicado no Google Play e anunciaremos aqui no site.</div>
+            </details>
+
+            <details class="faq-item">
+                <summary>O Lilith será gratuito?</summary>
+                <div class="faq-answer">Sim, o plano é lançar o Lilith gratuitamente, com anúncios discretos que ajudam a manter o desenvolvimento.</div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Precisarei de internet para usar?</summary>
+                <div class="faq-answer">Não! O Lilith será um player <strong>100% offline</strong>. Ele tocará apenas os arquivos de música que já estão no seu dispositivo, sem depender de conexão.</div>
+            </details>
+
+            <details class="faq-item">
+                <summary>O app vai baixar músicas da internet?</summary>
+                <div class="faq-answer">Não. O Lilith será apenas um <strong>player</strong> para os arquivos de áudio que você já tem no celular. Ele não baixa, não transmite e não compartilha músicas.</div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Precisarei criar conta ou fazer login?</summary>
+                <div class="faq-answer">Não. O Lilith não exigirá cadastro, login ou qualquer informação pessoal. Instalou, abriu, tocou.</div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Quais formatos de áudio serão suportados?</summary>
+                <div class="faq-answer">O plano é suportar os principais formatos do Android: MP3, AAC, FLAC, OGG, WAV e M4A.</div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Meus dados serão coletados?</summary>
+                <div class="faq-answer">Não coletaremos dados pessoais. Apenas dados anônimos de uso (se Firebase estiver ativo) e o identificador de publicidade (AdMob), se aplicável. Sua biblioteca musical e histórico de reprodução ficarão <strong>apenas no seu dispositivo</strong>. Veja a <a href="../privacidade/lilith.html">Política de Privacidade</a>.</div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Como reporto um erro ou sugiro uma melhoria?</summary>
+                <div class="faq-answer">Envie um e-mail para <a href="mailto:gamerextremobr5@gmail.com">gamerextremobr5@gmail.com</a> ou abra uma issue no <a href="https://github.com/GamerExtremoEliteHackerBR" target="_blank">GitHub</a>.</div>
+            </details>
+
+            <!-- ===== CHANGELOG ===== -->
+            <h3>📜 Status do Desenvolvimento</h3>
+
+            <div class="changelog-item">
+                <h4>🚧 Em desenvolvimento</h4>
+                <div class="version-date">07 de Novembro de 2026 — Pré-lançamento</div>
+                <ul>
+                    <li>Interface moderna com temas Claro e Escuro</li>
+                    <li>Reprodução de músicas locais (offline)</li>
+                    <li>Leitura automática da biblioteca do dispositivo</li>
+                    <li>Controles de reprodução completos</li>
+                    <li>Player em segundo plano com notificação</li>
+                </ul>
+            </div>
+
+            <div class="changelog-item">
+                <h4>📅 Próximos passos</h4>
+                <div class="version-date">Antes do lançamento</div>
+                <ul>
+                    <li>Testes finais de estabilidade</li>
+                    <li>Revisão da interface</li>
+                    <li>Publicação no Google Play</li>
+                </ul>
+            </div>
+
+            <!-- ===== LINKS ===== -->
+            <h3>🔒 Privacidade</h3>
+            <p>O Lilith não coletará dados pessoais, não exigirá cadastro e não acessará a internet para tocar suas músicas. Sua biblioteca musical e histórico ficarão apenas no seu dispositivo. Saiba mais na política abaixo.</p>
+
+            <div class="btn-group">
+                <a href="../privacidade/lilith.html" class="btn">📄 Política de Privacidade</a>
+                <a href="../index.html#apps" class="btn btn-outline">← Voltar aos apps</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gamer Extremo. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.documentElement.classList.remove('preload-light');
+        });
+    </script>
+    <script src="../js/common.js"></script>
+</body>
+</html>
+
+
+
+<!--<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lilith | Gamer Extremo</title>
+    <link rel="stylesheet" href="../css/style.css">-->
+<!-- Favicon -->
+<!--<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="apple-touch-icon" href="../favicon.svg">
+<meta name="theme-color" content="#1a1a2e">-->
+<!-- SEO -->
+<!--<meta name="description" content="Lilith: player de música offline, leve e rápido. Toque suas músicas locais com interface moderna, temas claro/escuro e sem precisar de internet.">
+<meta name="author" content="Gamer Extremo">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Gamer Extremo">
+<meta property="og:title" content="Lilith | Gamer Extremo">
+<meta property="og:description" content="Seu player de música offline. Leve, rápido e feito para tocar suas músicas locais com estilo.">
+<meta property="og:url" content="https://gamerextremoelitehackerbr.github.io/site-gamerextremo/apps/lilith.html">
+<meta property="og:image" content="https://gamerextremoelitehackerbr.github.io/site-gamerextremo/favicon.svg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Lilith | Gamer Extremo">
+<meta name="twitter:description" content="Seu player de música offline. Leve, rápido e feito para tocar suas músicas locais com estilo.">
+<meta name="twitter:image" content="https://gamerextremoelitehackerbr.github.io/site-gamerextremo/favicon.svg">-->
+<!-- Anti-flash de tema -->
+<!--<script>
+        (function () {
+            try {
+                if (localStorage.getItem('theme') === 'light')
+                    document.documentElement.classList.add('preload-light');
+            } catch (e) {}
+        })();
+    </script>
+    <style>
+        html.preload-light body { background: #f4f4f8; color: #1a1a2e; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="../index.html"><h1>Gamer <span>Extremo</span></h1></a>
+        <p>GAMES • APPS • ANIMES</p>
+        <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Alternar tema">☀️</button>
+    </header>
+
+    <nav>
+        <a href="../index.html">🏠 Início</a>
+        <a href="../index.html#apps" class="active">📱 Nossos Apps</a>
+        <a href="../sobre.html">🏢 Sobre</a>
+    </nav>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../index.html">Início</a>
+            <span>›</span>
+            <a href="../index.html#apps">Nossos Apps</a>
+            <span>›</span>
+            Lilith
+        </div>
+
+        <section class="card-block">
+            <h2>🎵 Lilith</h2>
+
+            <div class="app-meta">
+                <span><strong>Pacote:</strong> com.gamerextremo.lilith</span>
+                <span><strong>Plataforma:</strong> Android</span>
+                <span><strong>Categoria:</strong> Música e Áudio</span>
+                <span><strong>Versão:</strong> 1.01</span>
+            </div>
+
+            <p>O <strong>Lilith</strong> é um player de música <strong>offline</strong> feito para quem quer simplicidade, velocidade e estilo na hora de ouvir suas faixas favoritas. Sem depender de internet, sem cadastro, sem complicação — só você e a sua playlist.</p>
+
+            <p>Com uma interface moderna, suporte a <strong>temas Claro e Escuro</strong> e reprodução fluida, o Lilith transforma sua biblioteca local em uma experiência de audição premium. Ideal para quem tem músicas no celular e quer um player leve, bonito e funcional.</p>-->
+<!-- ===== BOTÃO PLAY STORE ===== -->
+<!--<div class="btn-group" style="margin: 20px 0;">
+    <a href="https://play.google.com/store/apps/details?id=com.gamerextremo.lilith" class="store-btn" target="_blank" rel="noopener">
+        <span class="store-icon">▶</span>
+        <span class="store-text">
+            <small>Disponível no</small>
+            <strong>Google Play</strong>
+        </span>
+    </a>
+</div>
+
+<h3>✨ Funcionalidades</h3>
+<ul>
+    <li><strong>Reprodução 100% offline</strong> — toque suas músicas sem precisar de internet</li>
+    <li>Leitura automática da biblioteca local do dispositivo</li>
+    <li>Interface moderna e intuitiva</li>
+    <li>Suporte a temas <strong>Claro e Escuro</strong></li>
+    <li>Controles de reprodução completos (play, pause, próxima, anterior, shuffle)</li>
+    <li>Player em segundo plano com notificação</li>
+    <li>Rápido, leve e sem anúncios invasivos</li>
+    <li>Sem cadastro, sem login, sem coleta de dados pessoais</li>
+</ul>
+
+<h3>🎧 Para quem é o Lilith?</h3>
+<ul>
+    <li>Quem guarda músicas no celular e quer um player bonito e funcional</li>
+    <li>Quem está cansado de apps pesados que exigem conta e internet</li>
+    <li>Quem valoriza <strong>privacidade</strong> e quer um app que não rastreia</li>
+    <li>Quem gosta de um design moderno com tema claro/escuro</li>
+</ul>-->
+<!-- ===== SCREENSHOTS ===== -->
+<!--<h3>📸 Screenshots</h3>
+<div class="screenshots">
+    <div class="screenshot">
+        <img src="../img/screenshots/lilith/01.png" alt="Tela inicial do Lilith" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='block';">
+        <div class="placeholder" style="display:none;">01.png<br>(coloque a imagem)</div>
+    </div>
+    <div class="screenshot">
+        <img src="../img/screenshots/lilith/02.png" alt="Player em reprodução" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='block';">
+        <div class="placeholder" style="display:none;">02.png<br>(coloque a imagem)</div>
+    </div>
+    <div class="screenshot">
+        <img src="../img/screenshots/lilith/03.png" alt="Lista de músicas" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='block';">
+        <div class="placeholder" style="display:none;">03.png<br>(coloque a imagem)</div>
+    </div>
+</div>-->
+<!-- ===== FAQ ===== -->
+<!--<h3>❓ Perguntas Frequentes</h3>
+
+<details class="faq-item">
+    <summary>O Lilith é gratuito?</summary>
+    <div class="faq-answer">Sim, o Lilith é totalmente gratuito, com anúncios discretos que ajudam a manter o desenvolvimento.</div>
+</details>
+
+<details class="faq-item">
+    <summary>Preciso de internet para usar?</summary>
+    <div class="faq-answer">Não! O Lilith é um player <strong>100% offline</strong>. Ele toca apenas os arquivos de música que já estão no seu dispositivo, sem depender de conexão.</div>
+</details>
+
+<details class="faq-item">
+    <summary>O app baixa músicas da internet?</summary>
+    <div class="faq-answer">Não. O Lilith é apenas um <strong>player</strong> para os arquivos de áudio que você já tem no celular. Ele não baixa, não transmite e não compartilha músicas.</div>
+</details>
+
+<details class="faq-item">
+    <summary>Preciso criar conta ou fazer login?</summary>
+    <div class="faq-answer">Não. O Lilith não exige cadastro, login ou qualquer informação pessoal. Instalou, abriu, tocou.</div>
+</details>
+
+<details class="faq-item">
+    <summary>Quais formatos de áudio são suportados?</summary>
+    <div class="faq-answer">O Lilith suporta os principais formatos do Android: MP3, AAC, FLAC, OGG, WAV e M4A.</div>
+</details>
+
+<details class="faq-item">
+    <summary>Meus dados são coletados?</summary>
+    <div class="faq-answer">Não coletamos dados pessoais. Apenas dados anônimos de uso (se Firebase estiver ativo) e o identificador de publicidade (AdMob), se aplicável. Sua biblioteca musical e histórico de reprodução ficam <strong>apenas no seu dispositivo</strong>. Veja a <a href="../privacidade/lilith.html">Política de Privacidade</a>.</div>
+</details>
+
+<details class="faq-item">
+    <summary>Como reporto um erro ou sugiro uma melhoria?</summary>
+    <div class="faq-answer">Envie um e-mail para <a href="mailto:gamerextremobr5@gmail.com">gamerextremobr5@gmail.com</a> ou abra uma issue no <a href="https://github.com/GamerExtremoEliteHackerBR" target="_blank">GitHub</a>.</div>
+</details>-->
+<!-- ===== CHANGELOG ===== -->
+<!--<h3>📜 Histórico de Versões</h3>
+
+<div class="changelog-item">
+    <h4>Versão 1.01</h4>
+    <div class="version-date">07 de Novembro de 2026 — Lançamento inicial</div>
+    <ul>
+        <li>Reprodução de músicas locais (offline)</li>
+        <li>Leitura automática da biblioteca do dispositivo</li>
+        <li>Interface moderna com temas Claro e Escuro</li>
+        <li>Controles de reprodução completos</li>
+        <li>Player em segundo plano com notificação</li>
+    </ul>
+</div>-->
+<!-- ===== LINKS ===== -->
+<!--<h3>🔒 Privacidade</h3>
+            <p>O Lilith não coleta dados pessoais, não exige cadastro e não acessa a internet para tocar suas músicas. Sua biblioteca musical e histórico ficam apenas no seu dispositivo. Saiba mais na política abaixo.</p>
+
+            <div class="btn-group">
+                <a href="../privacidade/lilith.html" class="btn">📄 Política de Privacidade</a>
+                <a href="../index.html#apps" class="btn btn-outline">← Voltar aos apps</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gamer Extremo. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.documentElement.classList.remove('preload-light');
+        });
+    </script>
+    <script src="../js/common.js"></script>
+</body>
+</html>-->
