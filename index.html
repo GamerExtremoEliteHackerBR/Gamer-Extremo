@@ -12,31 +12,33 @@
     <meta name="theme-color" content="#1a1a2e">
 
     <!-- SEO -->
-    <meta name="description" content="Gamer Extremo — desenvolvedora de games, apps Android e animes. Conheça nossos aplicativos publicados.">
+    <meta name="description" content="Gamer Extremo — desenvolvedora de games, apps Android, jogos Unity e animes. Conheça nosso portfólio completo.">
     <meta name="author" content="Gamer Extremo">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Gamer Extremo">
     <meta property="og:title" content="Gamer Extremo | Games • Apps • Animes">
-    <meta property="og:description" content="Desenvolvemos experiências digitais imersivas para múltiplas plataformas.">
+    <meta property="og:description" content="Desenvolvemos experiências digitais imersivas: apps Android, jogos Unity e animes.">
     <meta property="og:url" content="https://gamerextremoelitehackerbr.github.io/site-gamerextremo/">
     <meta property="og:image" content="https://gamerextremoelitehackerbr.github.io/site-gamerextremo/favicon.svg">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Gamer Extremo | Games • Apps • Animes">
-    <meta name="twitter:description" content="Desenvolvemos experiências digitais imersivas para múltiplas plataformas.">
+    <meta name="twitter:description" content="Desenvolvemos experiências digitais imersivas: apps Android, jogos Unity e animes.">
     <meta name="twitter:image" content="https://gamerextremoelitehackerbr.github.io/site-gamerextremo/favicon.svg">
 
-    <!-- Anti-flash de tema: aplica antes do body pintar -->
+    <!-- Anti-flash de tema -->
     <script>
         (function () {
             try {
-                var t = localStorage.getItem('theme');
-                if (t === 'light') document.documentElement.classList.add('preload-light');
-            } catch (e) {}
+                if (localStorage.getItem('theme') === 'light')
+                    document.documentElement.classList.add('preload-light');
+            } catch (e) { }
         })();
     </script>
     <style>
-        /* Evita flash de tema: enquanto 'preload-light' estiver no html, o body fica claro */
-        html.preload-light body { background: #f4f4f8; color: #1a1a2e; }
+        html.preload-light body {
+            background: #f4f4f8;
+            color: #1a1a2e;
+        }
     </style>
 </head>
 <body>
@@ -49,7 +51,7 @@
 
     <nav>
         <a href="index.html" class="active">🏠 Início</a>
-        <a href="#apps">📱 Nossos Apps</a>
+        <a href="#portfolio">📦 Portfólio</a>
         <a href="sobre.html">🏢 Sobre</a>
     </nav>
 
@@ -59,35 +61,153 @@
             <p>Desenvolvemos experiências digitais imersivas: games, aplicativos para múltiplas plataformas e produções de anime.</p>
         </section>
 
-        <section class="card-block" id="apps">
-            <h2>📱 Nossos Apps</h2>
-            <p>Clique em um app para ver a descrição completa, screenshots, FAQ e política de privacidade.</p>
+        <!-- ============ PORTFÓLIO COM ABAS ============ -->
+        <section class="card-block" id="portfolio">
 
-            <div class="cards">
-                <a href="apps/seguranca-privada-es.html" class="card">
-                    <div class="icon">🛡️</div>
-                    <h4>Segurança Privada ES</h4>
-                    <p>Quiz educativo sobre segurança privada no Espírito Santo.</p>
-                </a>
-                <a href="apps/multi-conversor.html" class="card">
-                    <div class="icon">🔄</div>
-                    <h4>Multi Conversor</h4>
-                    <p>Conversão de unidades, bases numéricas e ASCII.</p>
-                </a>
-
-                <a href="apps/jogo-da-velha-nostalgia.html" class="card">
-                    <div class="icon">❌⭕</div>
-                    <h4>Jogo da Velha, Nostalgia</h4>
-                    <p>O clássico jogo da velha com visual retrô. VS Android ou VS Pessoa.</p>
-                </a>
-
-                <a href="apps/busca-cep.html" class="card">
-                    <div class="icon">📍</div>
-                    <h4>Busca CEP</h4>
-                    <p>Consulte CEPs, ruas e use o GPS para encontrar endereços.</p>
-                </a>
-
+            <!-- Abas -->
+            <div class="tabs" role="tablist">
+                <button type="button" class="tab active" role="tab" aria-selected="true"
+                        data-tab="apps" onclick="showTab('apps')">
+                    📱 Apps Android Studio
+                </button>
+                <button type="button" class="tab" role="tab" aria-selected="false"
+                        data-tab="unity" onclick="showTab('unity')">
+                    🎮 Jogos Unity
+                </button>
             </div>
+
+            <!-- ===== ABA: APPS ===== -->
+            <div class="tab-content active" id="tab-apps" role="tabpanel">
+                <p>Clique em um app para ver a descrição completa, screenshots, FAQ e política de privacidade.</p>
+
+                <div class="cards">
+                    <a href="apps/seguranca-privada-es.html" class="card">
+                        <div class="icon">🛡️</div>
+                        <h4>Segurança Privada ES</h4>
+                        <p>Quiz educativo sobre segurança privada no Espírito Santo.</p>
+                    </a>
+                    <a href="apps/multi-conversor.html" class="card">
+                        <div class="icon">🔄</div>
+                        <h4>Multi Conversor</h4>
+                        <p>Conversão de unidades, bases numéricas e ASCII.</p>
+                    </a>
+                    <a href="apps/jogo-da-velha-nostalgia.html" class="card">
+                        <div class="icon">❌⭕</div>
+                        <h4>Jogo da Velha, Nostalgia</h4>
+                        <p>O clássico jogo da velha com visual retrô. VS Android ou VS Pessoa.</p>
+                    </a>
+                    <a href="apps/busca-cep.html" class="card">
+                        <div class="icon">📍</div>
+                        <h4>Busca CEP</h4>
+                        <p>Consulte CEPs, ruas e use o GPS para encontrar endereços.</p>
+                    </a>
+                    <a href="apps/lilith.html" class="card">
+                        <div class="icon">🎵</div>
+                        <h4>Lilith <span class="badge-soon">EM BREVE</span></h4>
+                        <p>Player de música offline, leve e com temas claro/escuro.</p>
+                    </a>
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+            <!-- ===== ABA: JOGOS UNITY ===== -->
+            <!--<div class="tab-content" id="tab-unity" role="tabpanel">
+        <p>Jogos desenvolvidos com <strong>Unity</strong> — para PC, mobile e web. Clique em um jogo para ver detalhes, screenshots e vídeos.</p>
+
+        <div class="cards">-->
+            <!-- ===== JOGO 1 (substitua pelos seus dados) ===== -->
+            <!--<a href="#" class="card card-soon" onclick="return false;" aria-disabled="true">
+        <div class="icon">🎮</div>
+        <h4>Seu Jogo Unity <span class="badge-soon">EM BREVE</span></h4>
+        <p>Descrição curta do jogo. Substitua este card pelo seu primeiro jogo.</p>
+    </a>-->
+            <!-- ===== JOGO 2 ===== -->
+            <!--<a href="#" class="card card-soon" onclick="return false;" aria-disabled="true">
+        <div class="icon">🎮</div>
+        <h4>Seu Jogo Unity <span class="badge-soon">EM BREVE</span></h4>
+        <p>Descrição curta do jogo. Substitua este card pelo seu segundo jogo.</p>
+    </a>-->
+            <!-- ===== JOGO 3 ===== -->
+            <!--<a href="#" class="card card-soon" onclick="return false;" aria-disabled="true">
+        <div class="icon">🎮</div>
+        <h4>Seu Jogo Unity <span class="badge-soon">EM BREVE</span></h4>
+        <p>Descrição curta do jogo. Substitua este card pelo seu terceiro jogo.</p>
+    </a>-->
+            <!--<a href="jogos/meu-jogo-unity.html" class="card">
+        <div class="icon">🎮</div>
+        <h4>Nome do Jogo</h4>
+        <p>Descrição curta em 1 frase. Gênero, plataforma, diferencial.</p>
+    </a>-->
+            <!--</div>
+
+            <div class="highlight-box" style="margin-top: 20px;">
+                <p><strong>🎯 Em desenvolvimento:</strong> novos jogos Unity estão a caminho. Fique de olho!</p>
+            </div>
+        </div>
+         <div class="cards">
+    <!-- JOGO 1 -->
+            <a href="jogos/seven-crystals.html" class="card">
+                <div class="icon">💎</div>
+                <h4>Seven Crystals</h4>
+                <p>Aventura 2D Plataforma. Restaure os 7 cristais mágicos e devolva a paz ao mundo de Lins.</p>
+            </a>
+
+            <!-- JOGO 2 -->
+            <a href="jogos/math-dash.html" class="card">
+                <div class="icon">➗</div>
+                <h4>Math Dash</h4>
+                <p>Corrida infinita educativa. Resolva operações matemáticas enquanto corre contra o tempo.</p>
+            </a>
+
+            <!-- JOGO 3 -->
+            <a href="jogos/math-adventure.html" class="card">
+                <div class="icon">📚</div>
+                <h4>Math Adventure</h4>
+                <p>RPG Aventura Educacional 2D. Colete livros de matemática e derrote inimigos.</p>
+            </a>
+
+            <!-- JOGO 4 -->
+            <a href="jogos/insect-killer.html" class="card">
+                <div class="icon">🐛</div>
+                <h4>Insect Killer</h4>
+                <p>Ação e Aventura 3D. Explore 3 fases, resolva quebra-cabeças e derrote chefes insetos.</p>
+            </a>
+
+            <!-- JOGO 5 -->
+            <a href="jogos/o-reciclador.html" class="card">
+                <div class="icon">♻️</div>
+                <h4>O Reciclador</h4>
+                <p>Jogo educacional sobre coleta seletiva. Arraste resíduos para as lixeiras corretas.</p>
+            </a>
+
+            <!-- JOGO 6 -->
+            <a href="jogos/2d-astronauta.html" class="card">
+                <div class="icon">🚀</div>
+                <h4>2D Astronauta</h4>
+                <p>Plataforma 2D espacial. Explore 4 fases, resolva quebra-cabeças e encontre fragmentos lunares.</p>
+            </a>
+
+            <!-- JOGO 7 -->
+            <a href="jogos/2dshooter.html" class="card">
+                <div class="icon">🛸</div>
+                <h4>2DShooter</h4>
+                <p>Shooter espacial 2D. Controle uma nave, desvie de asteroides e derrote 13 inimigos por fase.</p>
+            </a>
+            </div>
+
+            <div class="highlight-box" style="margin-top: 20px;">
+                <p><strong>🎯 Todos os jogos também estão publicados no itch.io!</strong> Acesse <a href="https://gamerextremoelitehackerbr.itch.io/" target="_blank" rel="noopener">gamerextremoelitehackerbr.itch.io</a> para baixar as versões mais recentes.</p>
+            </div>
+            </div>
+
         </section>
 
         <section class="card-block">
@@ -104,8 +224,49 @@
         <p>&copy; 2026 Gamer Extremo. Todos os direitos reservados / All rights reserved.</p>
     </footer>
 
+    <!-- Script das abas (inline, específico da home) -->
     <script>
-        // Remove a classe anti-flash após o body estar pronto
+        function showTab(tabName) {
+            // Esconde todos os conteúdos
+            document.querySelectorAll('.tab-content').forEach(function (el) {
+                el.classList.remove('active');
+            });
+            // Mostra o conteúdo alvo
+            var target = document.getElementById('tab-' + tabName);
+            if (target) target.classList.add('active');
+
+            // Atualiza estado dos botões
+            document.querySelectorAll('.tab').forEach(function (btn) {
+                btn.classList.remove('active');
+                btn.setAttribute('aria-selected', 'false');
+            });
+            var activeBtn = document.querySelector('.tab[data-tab="' + tabName + '"]');
+            if (activeBtn) {
+                activeBtn.classList.add('active');
+                activeBtn.setAttribute('aria-selected', 'true');
+            }
+
+            // Atualiza o hash da URL (permite link direto: index.html#unity)
+            if (history.replaceState) {
+                history.replaceState(null, '', '#' + tabName);
+            }
+
+            // Scroll suave até o topo do portfólio
+            var portfolio = document.getElementById('portfolio');
+            if (portfolio) {
+                portfolio.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        // Ao carregar, verifica se há hash (#apps ou #unity)
+        document.addEventListener('DOMContentLoaded', function () {
+            var hash = window.location.hash.replace('#', '');
+            if (hash === 'unity' || hash === 'apps') {
+                showTab(hash);
+            }
+        });
+    </script>
+    <script>
         document.addEventListener('DOMContentLoaded', function () {
             document.documentElement.classList.remove('preload-light');
         });
