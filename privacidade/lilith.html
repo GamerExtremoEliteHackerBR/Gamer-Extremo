@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade — Lilith | Gamer Extremo</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="apple-touch-icon" href="../favicon.svg">
+    <meta name="theme-color" content="#1a1a2e">
+
+    <!-- SEO -->
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Política de Privacidade do app Lilith — Gamer Extremo.">
+
+    <!-- Anti-flash de tema -->
+    <script>
+        (function () {
+            try {
+                if (localStorage.getItem('theme') === 'light')
+                    document.documentElement.classList.add('preload-light');
+            } catch (e) {}
+        })();
+    </script>
+    <style>
+        html.preload-light body { background: #f4f4f8; color: #1a1a2e; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="../index.html"><h1>Gamer <span>Extremo</span></h1></a>
+        <p>GAMES • APPS • ANIMES</p>
+        <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Alternar tema">☀️</button>
+    </header>
+
+    <nav>
+        <a href="../index.html">🏠 Início</a>
+        <!--<a href="../index.html#apps" class="active">📱 Nossos Apps</a>-->
+        <a href="../index.html#portfolio" class="active">📦 Portfólio</a>
+        <a href="../sobre.html">🏢 Sobre</a>
+    </nav>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../index.html">Início</a>
+            <span>›</span>
+            <a href="../apps/lilith.html">Lilith</a>
+            <span>›</span>
+            Política de Privacidade
+        </div>
+
+        <section class="card-block">
+
+            <div class="lang-switcher">
+                <div class="current">
+                    🌐 Idioma / Language: <strong id="current-lang-label">Português (BR)</strong>
+                </div>
+                <div class="lang-toggle" role="group" aria-label="Language selector">
+                    <button type="button" id="btn-pt" class="active" onclick="setPolicyLang('pt')">🇧🇷 PT-BR</button>
+                    <button type="button" id="btn-en" onclick="setPolicyLang('en')">🇺🇸 EN-US</button>
+                </div>
+            </div>
+
+            <!-- ================= PT-BR ================= -->
+            <div class="policy-content active" id="policy-pt">
+                <h2>Política de Privacidade — Lilith</h2>
+                <p class="updated">Última atualização: 07 de Novembro de 2026</p>
+
+                <div class="highlight-box">
+                    <p><strong>Desenvolvedora:</strong> Gamer Extremo<br>
+                    <strong>Aplicativo:</strong> Lilith<br>
+                    <strong>Pacote Android:</strong> <code>com.gamerextremo.lilith</code><br>
+                    <strong>Contato:</strong> <a href="mailto:gamerextremobr5@gmail.com">gamerextremobr5@gmail.com</a></p>
+                </div>
+
+                <h3>1. Introdução</h3>
+                <p>Esta Política de Privacidade descreve como a <strong>Gamer Extremo</strong> ("nós", "nosso") trata as informações dos usuários do aplicativo <strong>Lilith</strong>. Ao instalar e usar o app, você concorda com as práticas descritas aqui.</p>
+                <p>O Lilith é um <strong>player de música offline</strong>. Ele reproduz apenas os arquivos de áudio armazenados no seu próprio dispositivo. <strong>O app não acessa a internet para tocar músicas, não baixa conteúdo, não exige cadastro e não coleta dados pessoais.</strong></p>
+
+                <h3>2. Dados Coletados</h3>
+                <p>O aplicativo pode coletar as seguintes informações:</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dado</th>
+                            <th>Finalidade</th>
+                            <th>Armazenamento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Biblioteca musical local (arquivos de áudio do dispositivo)</td>
+                            <td>Listar e reproduzir suas músicas</td>
+                            <td><strong>Apenas no dispositivo.</strong> O app não envia, copia ou compartilha seus arquivos.</td>
+                        </tr>
+                        <tr>
+                            <td>Histórico de reprodução e playlists (se implementado)</td>
+                            <td>Permitir continuar de onde parou e organizar favoritas</td>
+                            <td>Armazenamento local no dispositivo</td>
+                        </tr>
+                        <tr>
+                            <td>Preferências do app (tema, etc.)</td>
+                            <td>Personalizar a experiência</td>
+                            <td>Armazenamento local no dispositivo</td>
+                        </tr>
+                        <tr>
+                            <td>Identificador de publicidade (Advertising ID)</td>
+                            <td>Exibição de anúncios (se aplicável)</td>
+                            <td>Coletado por SDK de terceiros (Google AdMob)</td>
+                        </tr>
+                        <tr>
+                            <td>Dados de uso anônimos e falhas (se Firebase implementado)</td>
+                            <td>Melhoria contínua do app e correção de erros</td>
+                            <td>Firebase Analytics / Crashlytics (Google)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p><strong>Não coletamos:</strong> nome, e-mail, telefone, localização (GPS), contatos, fotos, microfone, câmera ou quaisquer dados sensíveis.</p>
+
+                <div class="warning-box">
+                    <p><strong>⚠️ Importante:</strong> O Lilith <strong>não acessa a internet para tocar músicas</strong>. Ele é um player 100% offline. Seus arquivos de áudio nunca saem do seu dispositivo. O app <strong>não baixa</strong>, <strong>não transmite</strong> e <strong>não compartilha</strong> músicas.</p>
+                </div>
+
+                <h3>3. Permissões Utilizadas</h3>
+                <p>Para funcionar, o Lilith pode solicitar as seguintes permissões do Android:</p>
+                <ul>
+                    <li><strong>Acesso a arquivos de áudio/mídia</strong> — para listar e reproduzir as músicas armazenadas no dispositivo;</li>
+                    <li><strong>Notificações</strong> — para exibir o player em segundo plano com controles de reprodução;</li>
+                    <li><strong>Internet</strong> — apenas para carregar anúncios (AdMob) e, se aplicável, enviar dados anônimos de falhas (Firebase Crashlytics). <strong>Não é usada para transmitir músicas.</strong></li>
+                </ul>
+                <p>Você pode negar qualquer permissão nas configurações do Android, mas algumas funcionalidades podem deixar de funcionar.</p>
+
+                <h3>4. Compartilhamento com Terceiros</h3>
+                <p>Não vendemos, alugamos ou compartilhamos seus dados pessoais com terceiros para fins de marketing. Os únicos terceiros que podem ter acesso a dados são:</p>
+                <ul>
+                    <li><strong>Google LLC</strong> — por meio do AdMob (anúncios) e Firebase (analytics e crash logs, se implementado). O Google pode coletar Advertising ID, IP, dados de interação com anúncios e informações técnicas do dispositivo, conforme a <a href="https://policies.google.com/privacy" target="_blank">política do Google</a>.</li>
+                    <li><strong>Autoridades legais</strong> — quando exigido por lei ou ordem judicial.</li>
+                </ul>
+                <p><strong>Seus arquivos de música e histórico de reprodução nunca são compartilhados com terceiros.</strong></p>
+
+                <h3>5. Armazenamento e Retenção</h3>
+                <ul>
+                    <li><strong>Dados locais</strong> (biblioteca, histórico, playlists, preferências): permanecem no dispositivo enquanto o app estiver instalado. São removidos ao desinstalar o app ou limpar os dados.</li>
+                    <li><strong>Dados de analytics e crash logs</strong> (se Firebase): retidos por até <strong>14 meses</strong>, conforme configuração padrão do Google.</li>
+                    <li><strong>Dados de publicidade</strong> (se AdMob): gerenciados pelo Google AdMob conforme a política do Google.</li>
+                </ul>
+
+                <h3>6. Segurança</h3>
+                <p>Adotamos medidas técnicas razoáveis para proteger as informações armazenadas localmente no dispositivo. No entanto, nenhum sistema é 100% seguro.</p>
+
+                <h3>7. Direitos do Usuário (LGPD / GDPR / CCPA)</h3>
+                <p>Em conformidade com a <strong>LGPD (Lei nº 13.709/2018)</strong>, o <strong>GDPR</strong> e o <strong>CCPA</strong>, você tem direito a:</p>
+                <ul>
+                    <li>Confirmar a existência de tratamento de dados;</li>
+                    <li>Acessar, corrigir ou solicitar a exclusão dos seus dados;</li>
+                    <li>Revogar o consentimento a qualquer momento;</li>
+                    <li>Solicitar a portabilidade dos dados (GDPR);</li>
+                    <li>Optar por não vender/compartilhar dados (CCPA);</li>
+                    <li>Apresentar reclamação a uma autoridade de proteção de dados.</li>
+                </ul>
+                <p>Como a maior parte dos dados fica armazenada apenas no dispositivo, a exclusão pode ser feita diretamente <strong>desinstalando o app</strong> ou limpando os dados nas configurações do Android. Para dados tratados por terceiros (Google), solicite diretamente ao Google.</p>
+
+                <h3>8. Crianças</h3>
+                <p>O app é destinado a maiores de 13 anos. Não coletamos intencionalmente dados de crianças menores de 13 anos.</p>
+
+                <h3>9. Alterações nesta Política</h3>
+                <p>Podemos atualizar esta Política periodicamente. A data de "Última atualização" no topo será revisada. O uso contínuo do app após alterações constitui aceitação da nova versão.</p>
+
+                <h3>10. Contato</h3>
+                <p>Para dúvidas, solicitações ou reclamações sobre privacidade:</p>
+                <p><strong>E-mail:</strong> <a href="mailto:gamerextremobr5@gmail.com">gamerextremobr5@gmail.com</a><br>
+                <strong>GitHub:</strong> <a href="https://github.com/GamerExtremoEliteHackerBR" target="_blank">github.com/GamerExtremoEliteHackerBR</a></p>
+
+                <div class="btn-group">
+                    <a href="../apps/lilith.html" class="btn btn-outline">← Voltar ao app</a>
+                </div>
+            </div>
+
+            <!-- ================= EN-US ================= -->
+            <div class="policy-content" id="policy-en">
+                <h2>Privacy Policy — Lilith</h2>
+                <p class="updated">Last updated: November 7, 2026</p>
+
+                <div class="highlight-box">
+                    <p><strong>Developer:</strong> Gamer Extremo<br>
+                    <strong>Application:</strong> Lilith<br>
+                    <strong>Android Package:</strong> <code>com.gamerextremo.lilith</code><br>
+                    <strong>Contact:</strong> <a href="mailto:gamerextremobr5@gmail.com">gamerextremobr5@gmail.com</a></p>
+                </div>
+
+                <h3>1. Introduction</h3>
+                <p>This Privacy Policy describes how <strong>Gamer Extremo</strong> ("we", "our") handles user information for the <strong>Lilith</strong> application. By installing and using the app, you agree to the practices described here.</p>
+                <p>Lilith is an <strong>offline music player</strong>. It plays only audio files stored on your own device. <strong>The app does not access the internet to play music, does not download content, does not require sign-up, and does not collect personal data.</strong></p>
+
+                <h3>2. Data Collected</h3>
+                <p>The app may collect the following information:</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Purpose</th>
+                            <th>Storage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Local music library (audio files on the device)</td>
+                            <td>List and play your music</td>
+                            <td><strong>On the device only.</strong> The app does not send, copy, or share your files.</td>
+                        </tr>
+                        <tr>
+                            <td>Playback history and playlists (if implemented)</td>
+                            <td>Resume playback and organize favorites</td>
+                            <td>Local storage on the device</td>
+                        </tr>
+                        <tr>
+                            <td>App preferences (theme, etc.)</td>
+                            <td>Personalize the experience</td>
+                            <td>Local storage on the device</td>
+                        </tr>
+                        <tr>
+                            <td>Advertising ID</td>
+                            <td>Ad display (if applicable)</td>
+                            <td>Collected by third-party SDK (Google AdMob)</td>
+                        </tr>
+                        <tr>
+                            <td>Anonymous usage and crash data (if Firebase implemented)</td>
+                            <td>Continuous improvement and bug fixing</td>
+                            <td>Firebase Analytics / Crashlytics (Google)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p><strong>We do not collect:</strong> your name, email, phone number, location (GPS), contacts, photos, microphone, camera, or any sensitive data.</p>
+
+                <div class="warning-box">
+                    <p><strong>⚠️ Important:</strong> Lilith <strong>does not access the internet to play music</strong>. It is a 100% offline player. Your audio files never leave your device. The app <strong>does not download</strong>, <strong>stream</strong>, or <strong>share</strong> music.</p>
+                </div>
+
+                <h3>3. Permissions Used</h3>
+                <p>To function, Lilith may request the following Android permissions:</p>
+                <ul>
+                    <li><strong>Audio/media file access</strong> — to list and play music stored on the device;</li>
+                    <li><strong>Notifications</strong> — to show the background player with playback controls;</li>
+                    <li><strong>Internet</strong> — only to load ads (AdMob) and, if applicable, send anonymous crash data (Firebase Crashlytics). <strong>It is not used to stream music.</strong></li>
+                </ul>
+                <p>You can deny any permission in Android settings, but some features may stop working.</p>
+
+                <h3>4. Sharing with Third Parties</h3>
+                <p>We do not sell, rent, or share your personal data with third parties for marketing purposes. The only third parties that may access data are:</p>
+                <ul>
+                    <li><strong>Google LLC</strong> — through AdMob (ads) and Firebase (analytics and crash logs, if implemented). Google may collect Advertising ID, IP, ad interaction data, and device technical information, under <a href="https://policies.google.com/privacy" target="_blank">Google's policy</a>.</li>
+                    <li><strong>Legal authorities</strong> — when required by law or court order.</li>
+                </ul>
+                <p><strong>Your music files and playback history are never shared with third parties.</strong></p>
+
+                <h3>5. Storage and Retention</h3>
+                <ul>
+                    <li><strong>Local data</strong> (library, history, playlists, preferences): remains on the device while the app is installed. Removed upon uninstalling the app or clearing its data.</li>
+                    <li><strong>Analytics and crash logs</strong> (if Firebase): retained for up to <strong>14 months</strong>, per Google's default configuration.</li>
+                    <li><strong>Advertising data</strong> (if AdMob): managed by Google AdMob under Google's policy.</li>
+                </ul>
+
+                <h3>6. Security</h3>
+                <p>We adopt reasonable technical measures to protect information stored locally on the device. However, no system is 100% secure.</p>
+
+                <h3>7. User Rights (LGPD / GDPR / CCPA)</h3>
+                <p>In compliance with the <strong>LGPD (Law No. 13,709/2018)</strong>, the <strong>GDPR</strong>, and the <strong>CCPA</strong>, you have the right to:</p>
+                <ul>
+                    <li>Confirm the existence of data processing;</li>
+                    <li>Access, correct, or request deletion of your data;</li>
+                    <li>Revoke consent at any time;</li>
+                    <li>Request data portability (GDPR);</li>
+                    <li>Opt out of the sale/sharing of data (CCPA);</li>
+                    <li>Lodge a complaint with a data protection authority.</li>
+                </ul>
+                <p>Since most data is stored only on the device, deletion can be done directly by <strong>uninstalling the app</strong> or clearing its data in Android settings. For data processed by third parties (Google), please contact Google directly.</p>
+
+                <h3>8. Children</h3>
+                <p>The app is intended for users aged 13 and older. We do not knowingly collect data from children under 13.</p>
+
+                <h3>9. Changes to This Policy</h3>
+                <p>We may update this Policy periodically. The "Last updated" date at the top will be revised. Continued use of the app after changes constitutes acceptance of the new version.</p>
+
+                <h3>10. Contact</h3>
+                <p>For questions, requests, or complaints about privacy:</p>
+                <p><strong>Email:</strong> <a href="mailto:gamerextremobr5@gmail.com">gamerextremobr5@gmail.com</a><br>
+                <strong>GitHub:</strong> <a href="https://github.com/GamerExtremoEliteHackerBR" target="_blank">github.com/GamerExtremoEliteHackerBR</a></p>
+
+                <div class="btn-group">
+                    <a href="../apps/lilith.html" class="btn btn-outline">← Back to app</a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gamer Extremo. Todos os direitos reservados / All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.documentElement.classList.remove('preload-light');
+        });
+    </script>
+    <script src="../js/common.js"></script>
+</body>
+</html>
