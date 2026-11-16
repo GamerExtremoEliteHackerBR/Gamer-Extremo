@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Reciclador | Gamer Extremo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="apple-touch-icon" href="../favicon.svg">
+    <meta name="theme-color" content="#1a1a2e">
+    <meta name="description" content="O Reciclador — Jogo educacional sobre coleta seletiva. Arraste resíduos para as lixeiras corretas.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Gamer Extremo">
+    <meta property="og:title" content="O Reciclador | Gamer Extremo">
+    <meta property="og:description" content="Jogo educacional sobre coleta seletiva. Arraste resíduos para as lixeiras corretas.">
+    <meta property="og:url" content="https://gamerextremoelitehackerbr.github.io/site-gamerextremo/jogos/o-reciclador.html">
+    <meta property="og:image" content="https://gamerextremoelitehackerbr.github.io/site-gamerextremo/favicon.svg">
+    <script>
+        (function () {
+            try {
+                if (localStorage.getItem('theme') === 'light')
+                    document.documentElement.classList.add('preload-light');
+            } catch (e) { }
+        })();
+    </script>
+    <style>
+        html.preload-light body {
+            background: #f4f4f8;
+            color: #1a1a2e;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="../index.html"><h1>Gamer <span>Extremo</span></h1></a>
+        <p>GAMES • APPS • ANIMES</p>
+        <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Alternar tema">☀️</button>
+    </header>
+
+    <nav>
+        <a href="../index.html">🏠 Início</a>
+        <a href="../index.html#portfolio" class="active">📦 Portfólio</a>
+        <a href="../sobre.html">🏢 Sobre</a>
+    </nav>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../index.html">Início</a>
+            <span>›</span>
+            <a href="../index.html#portfolio">Portfólio</a>
+            <span>›</span>
+            <a href="../index.html#unity">Jogos Unity</a>
+            <span>›</span>
+            O Reciclador
+        </div>
+
+        <section class="card-block">
+            <h2>♻️ O Reciclador</h2>
+
+            <div class="app-meta">
+                <span><strong>Engine:</strong> Unity</span>
+                <span><strong>Plataforma:</strong> PC (Windows x86/x64), Android, Web</span>
+                <span><strong>Gênero:</strong> Educacional / Conscientização Ambiental</span>
+                <span><strong>Status:</strong> Atividade de Extensão — 1º Semestre 2024</span>
+            </div>
+
+            <p><strong>O Reciclador</strong> promove a conscientização ambiental por meio da coleta seletiva de lixo. O jogador deve coletar papel, metal, plástico, vidro e demais recicláveis, colocando-os na lixeira com a cor correta para ganhar pontos e evoluir. Inimigos aparecem e poluem o cenário com lixo — o jogador deve destruí-los e reciclar os resíduos. Ao demorar, os inimigos evoluem unindo-se a outros.</p>
+
+            <div class="btn-group" style="margin: 20px 0;">
+                <a href="https://gamerextremoelitehackerbr.itch.io/o-reciclador" class="btn" target="_blank" rel="noopener">
+                    ⬇️ Baixar / Jogar no itch.io
+                </a>
+            </div>
+
+            <h3>✨ Funcionalidades</h3>
+            <ul>
+                <li>Mecânica de arrastar resíduos para a lixeira correta</li>
+                <li>Sistema de pontos por descarte correto</li>
+                <li>Inimigos que poluem o cenário e evoluem</li>
+                <li>Informações educativas sobre cada tipo de material e lixeira</li>
+                <li>Conteúdo sobre coleta seletiva e descarte correto</li>
+            </ul>
+
+            <h3>🗑️ Tabela de Lixeiras (implementadas)</h3>
+            <ul>
+                <li>🔴 <strong>Vermelha:</strong> Plásticos</li>
+                <li>🔵 <strong>Azul:</strong> Papel</li>
+                <li>🟢 <strong>Verde:</strong> Vidro</li>
+                <li>🟡 <strong>Amarela:</strong> Metais</li>
+            </ul>
+            <p><em>(Laranja, Branca, Preta, Roxa, Marrom e Cinza — em breve)</em></p>
+
+            <h3>🎮 Controles</h3>
+            <p><strong>PC:</strong> Mouse (mover cursor) · Botão direito do mouse (clique/arrastar)</p>
+
+            <h3>👥 Créditos</h3>
+            <p>ZugBahn</p>
+
+            <h3>🌍 Alinhamento ODS</h3>
+            <ul>
+                <li><strong>ODS 11</strong> — Cidades e Comunidades Sustentáveis</li>
+                <li><strong>ODS 12</strong> — Consumo e Produção Responsáveis</li>
+            </ul>
+
+            <div class="btn-group">
+                <a href="../index.html#unity" class="btn btn-outline">← Voltar aos Jogos Unity</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gamer Extremo. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.documentElement.classList.remove('preload-light');
+        });
+    </script>
+    <script src="../js/common.js"></script>
+</body>
+</html>

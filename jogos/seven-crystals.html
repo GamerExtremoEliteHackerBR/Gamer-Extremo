@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seven Crystals | Gamer Extremo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="apple-touch-icon" href="../favicon.svg">
+    <meta name="theme-color" content="#1a1a2e">
+    <meta name="description" content="Seven Crystals — Aventura 2D Plataforma. Restaure os 7 cristais mágicos e devolva a paz ao mundo de Lins.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Gamer Extremo">
+    <meta property="og:title" content="Seven Crystals | Gamer Extremo">
+    <meta property="og:description" content="Aventura 2D Plataforma. Restaure os 7 cristais mágicos e devolva a paz ao mundo de Lins.">
+    <meta property="og:url" content="https://gamerextremoelitehackerbr.github.io/site-gamerextremo/jogos/seven-crystals.html">
+    <meta property="og:image" content="https://gamerextremoelitehackerbr.github.io/site-gamerextremo/favicon.svg">
+    <script>
+        (function () {
+            try {
+                if (localStorage.getItem('theme') === 'light')
+                    document.documentElement.classList.add('preload-light');
+            } catch (e) { }
+        })();
+    </script>
+    <style>
+        html.preload-light body {
+            background: #f4f4f8;
+            color: #1a1a2e;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="../index.html"><h1>Gamer <span>Extremo</span></h1></a>
+        <p>GAMES • APPS • ANIMES</p>
+        <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Alternar tema">☀️</button>
+    </header>
+
+    <nav>
+        <a href="../index.html">🏠 Início</a>
+        <a href="../index.html#portfolio" class="active">📦 Portfólio</a>
+        <a href="../sobre.html">🏢 Sobre</a>
+    </nav>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../index.html">Início</a>
+            <span>›</span>
+            <a href="../index.html#portfolio">Portfólio</a>
+            <span>›</span>
+            <a href="../index.html#unity">Jogos Unity</a>
+            <span>›</span>
+            Seven Crystals
+        </div>
+
+        <section class="card-block">
+            <h2>💎 Seven Crystals</h2>
+
+            <div class="app-meta">
+                <span><strong>Engine:</strong> Unity</span>
+                <span><strong>Plataforma:</strong> PC, Android, Web</span>
+                <span><strong>Gênero:</strong> Aventura 2D Plataforma</span>
+                <span><strong>Versão:</strong> V_0.1.2 (04/01/2026)</span>
+                <span><strong>Classificação:</strong> +13</span>
+                <span><strong>Idioma:</strong> PT-BR</span>
+            </div>
+
+            <p>Em <strong>Seven Crystals</strong>, você controla EasyKaos, um herói destemido que tem a missão de restaurar o equilíbrio de Lins. Este mundo de cristal está em caos desde que sete cristais mágicos, que garantem a paz, foram roubados e espalhados pelo reino. Através de duas fases detalhadas, EasyKaos explora cenários deslumbrantes, coleta moedas e pedaços de cristal, e enfrenta vilões para completar o lendário Crystal Mágico.</p>
+
+            <div class="btn-group" style="margin: 20px 0;">
+                <a href="https://gamerextremoelitehackerbr.itch.io/seven-crystals" class="btn" target="_blank" rel="noopener">
+                    ⬇️ Baixar / Jogar no itch.io
+                </a>
+            </div>
+
+            <h3>✨ Funcionalidades</h3>
+            <ul>
+                <li>Exploração e ação dinâmica com combates estratégicos</li>
+                <li>Side quests (coletar moedas, eliminar inimigos específicos)</li>
+                <li>Sistema de inventário e progresso</li>
+                <li>Menus e interface customizáveis</li>
+                <li>Objetivo final: reunir os 7 cristais e restaurar o Crystal Mágico</li>
+            </ul>
+
+            <h3>🎮 Controles</h3>
+            <p><strong>PC:</strong> A/D ou setas (movimento) · Espaço (pular) · F ou clique (atacar) · P (pausar)</p>
+            <p><strong>Mobile:</strong> Controles virtuais no HUD (movimentação, pulo, ataque, menu)</p>
+
+            <h3>📌 Status</h3>
+            <div class="highlight-box">
+                <p>Em breve na <strong>PlayStore</strong> e <strong>Steam</strong>. Conta PayConsole: Gamer Extremo.</p>
+            </div>
+
+            <div class="btn-group">
+                <a href="../index.html#unity" class="btn btn-outline">← Voltar aos Jogos Unity</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gamer Extremo. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.documentElement.classList.remove('preload-light');
+        });
+    </script>
+    <script src="../js/common.js"></script>
+</body>
+</html>

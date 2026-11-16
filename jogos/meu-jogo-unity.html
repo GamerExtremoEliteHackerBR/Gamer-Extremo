@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{NOME_JOGO}} | Gamer Extremo</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="apple-touch-icon" href="../favicon.svg">
+    <meta name="theme-color" content="#1a1a2e">
+
+    <meta name="description" content="{{DESCRICAO_CURTA}}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Gamer Extremo">
+    <meta property="og:title" content="{{NOME_JOGO}} | Gamer Extremo">
+    <meta property="og:description" content="{{DESCRICAO_CURTA}}">
+    <meta property="og:url" content="https://gamerextremoelitehackerbr.github.io/site-gamerextremo/jogos/{{SLUG}}.html">
+    <meta property="og:image" content="https://gamerextremoelitehackerbr.github.io/site-gamerextremo/favicon.svg">
+
+    <script>
+        (function () {
+            try {
+                if (localStorage.getItem('theme') === 'light')
+                    document.documentElement.classList.add('preload-light');
+            } catch (e) {}
+        })();
+    </script>
+    <style>
+        html.preload-light body { background: #f4f4f8; color: #1a1a2e; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="../index.html"><h1>Gamer <span>Extremo</span></h1></a>
+        <p>GAMES • APPS • ANIMES</p>
+        <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Alternar tema">☀️</button>
+    </header>
+
+    <nav>
+        <a href="../index.html">🏠 Início</a>
+        <a href="../index.html#portfolio" class="active">📦 Portfólio</a>
+        <a href="../sobre.html">🏢 Sobre</a>
+    </nav>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../index.html">Início</a>
+            <span>›</span>
+            <a href="../index.html#portfolio">Portfólio</a>
+            <span>›</span>
+            <a href="../index.html#unity">Jogos Unity</a>
+            <span>›</span>
+            {{NOME_JOGO}}
+        </div>
+
+        <section class="card-block">
+            <h2>🎮 {{NOME_JOGO}}</h2>
+
+            <div class="app-meta">
+                <span><strong>Engine:</strong> Unity</span>
+                <span><strong>Plataforma:</strong> {{PLATAFORMAS}}</span>
+                <span><strong>Gênero:</strong> {{GENERO}}</span>
+                <span><strong>Versão:</strong> {{VERSAO}}</span>
+            </div>
+
+            <p>{{DESCRICAO_LONGA}}</p>
+
+            <!-- Botão de download / loja (quando publicado) -->
+            <div class="btn-group" style="margin: 20px 0;">
+                <a href="{{URL_DOWNLOAD}}" class="btn" target="_blank" rel="noopener">
+                    ⬇️ Baixar / Jogar
+                </a>
+            </div>
+
+            <h3>✨ Funcionalidades</h3>
+            <ul>
+                <li>{{FEATURE_1}}</li>
+                <li>{{FEATURE_2}}</li>
+                <li>{{FEATURE_3}}</li>
+            </ul>
+
+            <h3>📸 Screenshots</h3>
+            <div class="screenshots">
+                <div class="screenshot">
+                    <img src="../img/screenshots/{{SLUG}}/01.png" alt="{{NOME_JOGO}} — screenshot 1" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='block';">
+                    <div class="placeholder" style="display:none;">01.png<br>(coloque a imagem)</div>
+                </div>
+                <div class="screenshot">
+                    <img src="../img/screenshots/{{SLUG}}/02.png" alt="{{NOME_JOGO}} — screenshot 2" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='block';">
+                    <div class="placeholder" style="display:none;">02.png<br>(coloque a imagem)</div>
+                </div>
+                <div class="screenshot">
+                    <img src="../img/screenshots/{{SLUG}}/03.png" alt="{{NOME_JOGO}} — screenshot 3" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='block';">
+                    <div class="placeholder" style="display:none;">03.png<br>(coloque a imagem)</div>
+                </div>
+            </div>
+
+            <h3>🎥 Vídeo / Gameplay</h3>
+            <p>Se houver vídeo, cole aqui o embed do YouTube:</p>
+            <!--
+            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px;margin:15px 0;">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID" 
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" 
+                        allowfullscreen></iframe>
+            </div>
+            -->
+
+            <h3>📜 Histórico de Versões</h3>
+
+            <div class="changelog-item">
+                <h4>Versão {{VERSAO}}</h4>
+                <div class="version-date">{{DATA_LANCAMENTO}} — Lançamento inicial</div>
+                <ul>
+                    <li>{{CHANGE_1}}</li>
+                    <li>{{CHANGE_2}}</li>
+                </ul>
+            </div>
+
+            <div class="btn-group">
+                <a href="../index.html#unity" class="btn btn-outline">← Voltar aos jogos Unity</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gamer Extremo. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.documentElement.classList.remove('preload-light');
+        });
+    </script>
+    <script src="../js/common.js"></script>
+</body>
+</html>

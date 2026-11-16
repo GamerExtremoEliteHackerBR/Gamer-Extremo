@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Dash | Gamer Extremo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="apple-touch-icon" href="../favicon.svg">
+    <meta name="theme-color" content="#1a1a2e">
+    <meta name="description" content="Math Dash — Corrida infinita educativa 3D. Resolva operações matemáticas enquanto corre contra o tempo.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Gamer Extremo">
+    <meta property="og:title" content="Math Dash | Gamer Extremo">
+    <meta property="og:description" content="Corrida infinita educativa 3D. Resolva operações matemáticas enquanto corre contra o tempo.">
+    <meta property="og:url" content="https://gamerextremoelitehackerbr.github.io/site-gamerextremo/jogos/math-dash.html">
+    <meta property="og:image" content="https://gamerextremoelitehackerbr.github.io/site-gamerextremo/favicon.svg">
+    <script>
+        (function () {
+            try {
+                if (localStorage.getItem('theme') === 'light')
+                    document.documentElement.classList.add('preload-light');
+            } catch (e) { }
+        })();
+    </script>
+    <style>
+        html.preload-light body {
+            background: #f4f4f8;
+            color: #1a1a2e;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="../index.html"><h1>Gamer <span>Extremo</span></h1></a>
+        <p>GAMES • APPS • ANIMES</p>
+        <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Alternar tema">☀️</button>
+    </header>
+
+    <nav>
+        <a href="../index.html">🏠 Início</a>
+        <a href="../index.html#portfolio" class="active">📦 Portfólio</a>
+        <a href="../sobre.html">🏢 Sobre</a>
+    </nav>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../index.html">Início</a>
+            <span>›</span>
+            <a href="../index.html#portfolio">Portfólio</a>
+            <span>›</span>
+            <a href="../index.html#unity">Jogos Unity</a>
+            <span>›</span>
+            Math Dash
+        </div>
+
+        <section class="card-block">
+            <h2>➗ Math Dash</h2>
+
+            <div class="app-meta">
+                <span><strong>Engine:</strong> Unity</span>
+                <span><strong>Plataforma:</strong> Android (PC e Web em produção)</span>
+                <span><strong>Gênero:</strong> Corrida infinita com desafios educativos (3D)</span>
+                <span><strong>Versão:</strong> V_0.1 (23/04/2025)</span>
+                <span><strong>Classificação:</strong> +13</span>
+                <span><strong>Idioma:</strong> PT-BR</span>
+            </div>
+
+            <p><strong>Math Dash</strong> é um jogo educativo 3D em que o jogador controla Alice, uma garota determinada que resolve operações matemáticas enquanto corre, desafiando reflexos e raciocínio lógico. A protagonista precisa ajudar sua escola a vencer um campeonato de conhecimento matemático, enfrentando desafios de cálculo enquanto evita armadilhas e erros.</p>
+
+            <div class="btn-group" style="margin: 20px 0;">
+                <a href="https://gamerextremoelitehackerbr.itch.io/math-dash" class="btn" target="_blank" rel="noopener">
+                    ⬇️ Baixar / Jogar no itch.io
+                </a>
+            </div>
+
+            <h3>✨ Funcionalidades</h3>
+            <ul>
+                <li>Movimentação lateral para coletar respostas corretas e evitar erradas</li>
+                <li>Sistema de pontuação por acertos e penalidades por erros</li>
+                <li>Dois níveis de dificuldade progressiva (operações básicas → intermediárias)</li>
+                <li>Câmera em terceira pessoa fixa no eixo +Z</li>
+                <li>HUD com pontuação e questão matemática</li>
+            </ul>
+
+            <h3>🎮 Controles</h3>
+            <p><strong>Mobile:</strong> Toque na tela para mover lateralmente</p>
+            <p><strong>PC/Web:</strong> Teclas direcionais para mover lateralmente</p>
+
+            <h3>👥 Créditos</h3>
+            <p>Wanderson Marinho Pego (RGM 33067457) e Pedro de Souza Carvalho (RGM 35703920)</p>
+
+            <h3>🌍 Alinhamento ODS</h3>
+            <ul>
+                <li><strong>ODS 3</strong> — Saúde Mental por meio de atividades cognitivas</li>
+                <li><strong>ODS 11</strong> — Educação acessível para crianças em ambientes urbanos e rurais</li>
+            </ul>
+
+            <h3>📌 Status</h3>
+            <div class="highlight-box">
+                <p>Em breve na <strong>PlayStore</strong> e <strong>Steam</strong>. Versão PC e Web em produção.</p>
+            </div>
+
+            <div class="btn-group">
+                <a href="../index.html#unity" class="btn btn-outline">← Voltar aos Jogos Unity</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gamer Extremo. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.documentElement.classList.remove('preload-light');
+        });
+    </script>
+    <script src="../js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Astronauta | Gamer Extremo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="apple-touch-icon" href="../favicon.svg">
+    <meta name="theme-color" content="#1a1a2e">
+    <meta name="description" content="2D Astronauta — Plataforma 2D espacial. Explore 4 fases, resolva quebra-cabeças e encontre fragmentos lunares.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Gamer Extremo">
+    <meta property="og:title" content="2D Astronauta | Gamer Extremo">
+    <meta property="og:description" content="Plataforma 2D espacial. Explore 4 fases, resolva quebra-cabeças e encontre fragmentos lunares.">
+    <meta property="og:url" content="https://gamerextremoelitehackerbr.github.io/site-gamerextremo/jogos/2d-astronauta.html">
+    <meta property="og:image" content="https://gamerextremoelitehackerbr.github.io/site-gamerextremo/favicon.svg">
+    <script>
+        (function () {
+            try {
+                if (localStorage.getItem('theme') === 'light')
+                    document.documentElement.classList.add('preload-light');
+            } catch (e) { }
+        })();
+    </script>
+    <style>
+        html.preload-light body {
+            background: #f4f4f8;
+            color: #1a1a2e;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="../index.html"><h1>Gamer <span>Extremo</span></h1></a>
+        <p>GAMES • APPS • ANIMES</p>
+        <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Alternar tema">☀️</button>
+    </header>
+
+    <nav>
+        <a href="../index.html">🏠 Início</a>
+        <a href="../index.html#portfolio" class="active">📦 Portfólio</a>
+        <a href="../sobre.html">🏢 Sobre</a>
+    </nav>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../index.html">Início</a>
+            <span>›</span>
+            <a href="../index.html#portfolio">Portfólio</a>
+            <span>›</span>
+            <a href="../index.html#unity">Jogos Unity</a>
+            <span>›</span>
+            2D Astronauta
+        </div>
+
+        <section class="card-block">
+            <h2>🚀 2D Astronauta</h2>
+
+            <div class="app-meta">
+                <span><strong>Engine:</strong> Unity</span>
+                <span><strong>Plataforma:</strong> PC (Windows x86_64), MacOS</span>
+                <span><strong>Gênero:</strong> Plataforma / Quebra-cabeça (2D)</span>
+                <span><strong>Status:</strong> TCC — 4 fases completas</span>
+            </div>
+
+            <p>Embarque em uma jornada espacial com <strong>2D Astronauta</strong>, um jogo de plataforma que desafia habilidades e astúcia. Explore quatro fases repletas de mistérios cósmicos, resolva quebra-cabeças e descubra os segredos do espaço. Encontre os fragmentos lunares ocultos para desbloquear o caminho para a próxima fase.</p>
+
+            <div class="btn-group" style="margin: 20px 0;">
+                <a href="https://gamerextremoelitehackerbr.itch.io/2d-astronauta" class="btn" target="_blank" rel="noopener">
+                    ⬇️ Baixar / Jogar no itch.io
+                </a>
+            </div>
+
+            <h3>✨ Funcionalidades</h3>
+            <ul>
+                <li>Exploração espacial em 4 fases cativantes</li>
+                <li>Quebra-cabeças desafiadores</li>
+                <li>Sistema de chaves para coletar fragmentos lunares</li>
+                <li>Som e efeitos sonoros em todas as fases</li>
+                <li>Controles simples e responsivos</li>
+            </ul>
+
+            <h3>🎮 Controles</h3>
+            <p><strong>PC:</strong> WSAD (mover) · Espaço (pular) · Esc (pausar/despausar) · Botão esquerdo do mouse (confirmar)</p>
+
+            <h3>🗺️ Fases</h3>
+            <ul>
+                <li><strong>Level 1</strong> — Pegue as chaves para coletar o fragmento lunar e chegar ao Level 2</li>
+                <li><strong>Level 2</strong> — Pegue as chaves para coletar o fragmento lunar e chegar ao Level 3</li>
+                <li><strong>Level 3</strong> — Pegue as chaves para coletar o fragmento lunar e chegar ao Level 4</li>
+                <li><strong>Level 4</strong> — Pegue as chaves para coletar o fragmento lunar e finalizar o game</li>
+            </ul>
+
+            <div class="btn-group">
+                <a href="../index.html#unity" class="btn btn-outline">← Voltar aos Jogos Unity</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gamer Extremo. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.documentElement.classList.remove('preload-light');
+        });
+    </script>
+    <script src="../js/common.js"></script>
+</body>
+</html>

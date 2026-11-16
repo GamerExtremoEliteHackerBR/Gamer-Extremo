@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2DShooter | Gamer Extremo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="apple-touch-icon" href="../favicon.svg">
+    <meta name="theme-color" content="#1a1a2e">
+    <meta name="description" content="2DShooter — Shooter espacial 2D. Controle uma nave, desvie de asteroides e derrote 13 inimigos por fase.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Gamer Extremo">
+    <meta property="og:title" content="2DShooter | Gamer Extremo">
+    <meta property="og:description" content="Shooter espacial 2D. Controle uma nave, desvie de asteroides e derrote 13 inimigos por fase.">
+    <meta property="og:url" content="https://gamerextremoelitehackerbr.github.io/site-gamerextremo/jogos/2dshooter.html">
+    <meta property="og:image" content="https://gamerextremoelitehackerbr.github.io/site-gamerextremo/favicon.svg">
+    <script>
+        (function () {
+            try {
+                if (localStorage.getItem('theme') === 'light')
+                    document.documentElement.classList.add('preload-light');
+            } catch (e) { }
+        })();
+    </script>
+    <style>
+        html.preload-light body {
+            background: #f4f4f8;
+            color: #1a1a2e;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="../index.html"><h1>Gamer <span>Extremo</span></h1></a>
+        <p>GAMES • APPS • ANIMES</p>
+        <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Alternar tema">☀️</button>
+    </header>
+
+    <nav>
+        <a href="../index.html">🏠 Início</a>
+        <a href="../index.html#portfolio" class="active">📦 Portfólio</a>
+        <a href="../sobre.html">🏢 Sobre</a>
+    </nav>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../index.html">Início</a>
+            <span>›</span>
+            <a href="../index.html#portfolio">Portfólio</a>
+            <span>›</span>
+            <a href="../index.html#unity">Jogos Unity</a>
+            <span>›</span>
+            2DShooter
+        </div>
+
+        <section class="card-block">
+            <h2>🛸 2DShooter</h2>
+
+            <div class="app-meta">
+                <span><strong>Engine:</strong> Unity</span>
+                <span><strong>Plataforma:</strong> PC (Windows x86_64), MacOS</span>
+                <span><strong>Gênero:</strong> Shooter Espacial (2D)</span>
+                <span><strong>Status:</strong> Curso Design e Desenvolvimento de Jogos 1 — 3 fases</span>
+            </div>
+
+            <p>Explore as vastidões do espaço neste envolvente jogo <strong>2DShooter</strong>, desenvolvido na Unity. Controle uma nave espacial enquanto desvia de asteroides, aniquila inimigos e enfrenta desafios intergalácticos. O jogo é composto por três fases emocionantes — derrote 13 inimigos para progredir e alcance a terceira fase para a vitória final.</p>
+
+            <div class="btn-group" style="margin: 20px 0;">
+                <a href="https://gamerextremoelitehackerbr.itch.io/2dshooter" class="btn" target="_blank" rel="noopener">
+                    ⬇️ Baixar / Jogar no itch.io
+                </a>
+            </div>
+
+            <h3>✨ Funcionalidades</h3>
+            <ul>
+                <li>Três fases com dificuldade crescente</li>
+                <li>Sistema de contagem de inimigos eliminados (13 por fase)</li>
+                <li>Controles intuitivos de navegação espacial</li>
+                <li>Menu de pausa acessível</li>
+                <li>Desafio de maior pontuação</li>
+            </ul>
+
+            <h3>🎮 Controles</h3>
+            <p><strong>PC:</strong> ADWS ou teclas de direção (mover) · Botão esquerdo do mouse (atirar) · Mouse (controlar câmera) · Esc (menu de pausa)</p>
+
+            <h3>🗺️ Fases</h3>
+            <ul>
+                <li><strong>Level 1</strong> — Derrote 13 inimigos para alcançar o Level 2</li>
+                <li><strong>Level 2</strong> — Derrote 13 inimigos para alcançar o Level 3</li>
+                <li><strong>Level 3</strong> — Derrote 13 inimigos para finalizar o jogo</li>
+            </ul>
+
+            <div class="btn-group">
+                <a href="../index.html#unity" class="btn btn-outline">← Voltar aos Jogos Unity</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gamer Extremo. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.documentElement.classList.remove('preload-light');
+        });
+    </script>
+    <script src="../js/common.js"></script>
+</body>
+</html>
