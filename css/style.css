@@ -665,3 +665,173 @@ footer {
     .error-page .code { font-size: 5em; }
     .theme-toggle { width: 36px; height: 36px; font-size: 1.1em; top: 10px; right: 10px; }
 }
+
+
+/* ============ BADGE "EM BREVE" ============ */
+.badge-soon {
+    display: inline-block;
+    background: #ffb400;
+    color: #1a1a2e;
+    font-size: 0.42em;
+    font-weight: 800;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    animation: pulseSoon 2s infinite;
+    box-shadow: 0 0 12px rgba(255, 180, 0, 0.4);
+}
+
+@keyframes pulseSoon {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.85;
+        transform: scale(1.05);
+    }
+}
+
+body.light .badge-soon {
+    color: #fff;
+    background: #d49b00;
+}
+
+@media (max-width: 600px) {
+    .badge-soon {
+        font-size: 0.5em;
+        padding: 3px 8px;
+        margin-left: 6px;
+    }
+}
+
+/* ============ SISTEMA DE ABAS ============ */
+.tabs {
+    display: flex;
+    gap: 6px;
+    background: var(--bg);
+    border-radius: 10px;
+    padding: 6px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border);
+    flex-wrap: wrap;
+}
+
+.tab {
+    flex: 1;
+    min-width: 140px;
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    padding: 12px 18px;
+    font-size: 0.95em;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.25s;
+    font-family: inherit;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+    .tab:hover {
+        color: var(--text);
+        background: var(--bg-card);
+    }
+
+    .tab.active {
+        background: var(--accent);
+        color: #fff;
+        box-shadow: 0 4px 12px var(--shadow);
+    }
+
+.tab-content {
+    display: none;
+    animation: fadeInTab 0.3s ease;
+}
+
+    .tab-content.active {
+        display: block;
+    }
+
+@keyframes fadeInTab {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Card desabilitado (para "em breve") */
+.card-soon {
+    opacity: 0.75;
+    cursor: not-allowed;
+}
+
+    .card-soon:hover {
+        transform: none;
+        border-color: var(--border);
+        box-shadow: none;
+    }
+
+/* Badge "EM BREVE" (já existente, reforço caso não tenha) */
+.badge-soon {
+    display: inline-block;
+    background: #ffb400;
+    color: #1a1a2e;
+    font-size: 0.42em;
+    font-weight: 800;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    animation: pulseSoon 2s infinite;
+    box-shadow: 0 0 12px rgba(255, 180, 0, 0.4);
+}
+
+@keyframes pulseSoon {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.85;
+        transform: scale(1.05);
+    }
+}
+
+body.light .badge-soon {
+    color: #fff;
+    background: #d49b00;
+}
+
+@media (max-width: 600px) {
+    .tabs {
+        padding: 4px;
+    }
+
+    .tab {
+        min-width: 0;
+        padding: 10px 12px;
+        font-size: 0.85em;
+    }
+
+    .badge-soon {
+        font-size: 0.5em;
+        padding: 3px 8px;
+        margin-left: 6px;
+    }
+}
